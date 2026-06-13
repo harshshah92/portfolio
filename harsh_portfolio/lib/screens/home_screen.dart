@@ -6,6 +6,7 @@ import '../widgets/nav_bar.dart';
 import '../widgets/section_title.dart';
 import '../widgets/project_card.dart';
 import '../widgets/footer.dart';
+import '../sections/contact_section.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -51,6 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 _FeaturedProjectsSection(),
                 _TechnologyShowcaseSection(),
                 _DownloadSection(),
+                const ContactSection(),
                 const AppFooter(),
               ],
             ),
