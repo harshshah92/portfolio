@@ -42,6 +42,10 @@ class AppNavBar extends StatelessWidget {
                     'assets/icon.png',
                     width: 28,
                     height: 28,
+                    errorBuilder: (_, __, ___) => const SizedBox(
+                      width: 28,
+                      height: 28,
+                    ),
                   ),
                 ),
                 const SizedBox(width: 10),

@@ -140,7 +140,7 @@ class _HeroSection extends StatelessWidget {
   }
 
   void _downloadPdf() {
-    launchUrl(Uri.parse('assets/Harsh_Portfolio.pdf'));
+    launchUrl(Uri.parse('assets/assets/Harsh_Portfolio.pdf'));
   }
 }
 
@@ -769,7 +769,7 @@ class _DownloadSection extends StatelessWidget {
           const SizedBox(height: 20),
           ElevatedButton.icon(
             onPressed: () {
-              launchUrl(Uri.parse('assets/Harsh_Portfolio.pdf'));
+              launchUrl(Uri.parse('assets/assets/Harsh_Portfolio.pdf'));
             },
             icon: const Icon(Icons.download_rounded, size: 18),
             label: const Text('Download PDF'),
