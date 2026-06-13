@@ -890,7 +890,7 @@ a.l()
 return l},
 jU(a){return new A.I5(a)},
 aJS(a){var s,r,q,p,o,n,m
-A:for(s=a.length,r=0;r<6;++r){q=B.FK[r]
+A:for(s=a.length,r=0;r<6;++r){q=B.FJ[r]
 p=q.c
 o=p.length
 if(s<o)continue A
@@ -10786,8 +10786,8 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.bd(s,200)
-r=A.bd(A.YC(l,B.nE,B.Ge),24)
-q=A.bd(A.YC(l,B.nE,B.Hd),32)
+r=A.bd(A.YC(l,B.nE,B.Gd),24)
+q=A.bd(A.YC(l,B.nE,B.H9),32)
 p=A.bd(l.a,10)
 o=A.bd(l.a,12)
 l.d===$&&A.a()
@@ -10797,8 +10797,8 @@ break
 case 5:s=l.a
 s===$&&A.a()
 s=A.bd(A.xE(s+240),40)
-r=A.bd(A.YC(l,B.nG,B.I0),24)
-q=A.bd(A.YC(l,B.nG,B.I1),32)
+r=A.bd(A.YC(l,B.nG,B.I_),24)
+q=A.bd(A.YC(l,B.nG,B.I0),32)
 p=A.bd(l.a+15,8)
 o=A.bd(l.a+15,12)
 l.d===$&&A.a()
@@ -18279,7 +18279,7 @@ r.toString
 A.e2(r)
 q=a.h(0,"swipeEdge")
 q.toString
-return new A.lU(s,r,B.GP[A.e0(q)])},
+return new A.lU(s,r,B.GM[A.e0(q)])},
 zT:function zT(a,b){this.a=a
 this.b=b},
 lU:function lU(a,b,c){this.a=a
@@ -20246,7 +20246,7 @@ if(a.as!==q)return q?-1:1
 return 0},
 aBP(a,b){var s=A.W(b).i("Y<1,d9>")
 s=A.U(new A.Y(b,new A.Zq(),s),s.i("ae.E"))
-return A.aBi(!0,s,a,B.Hx,!0,B.CY,null)},
+return A.aBi(!0,s,a,B.Hu,!0,B.CY,null)},
 anG(a){var s
 try{a.dC()}catch(s){a.KB()}a.w=B.Vq
 try{a.ba(A.aK4())}catch(s){}},
@@ -20828,7 +20828,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 ao3(a,b){var s
-if(a.j(0,b))return new A.FU(B.Hz)
+if(a.j(0,b))return new A.FU(B.Hw)
 s=A.c([],t.fJ)
 A.bQ()
 a.nu(new A.a13(b,A.aI(t.u),s))
@@ -21178,7 +21178,7 @@ t.Dn.a(a)
 s=J.bo(a)
 r=s.h(a,0)
 r.toString
-switch(B.FT[A.e0(r)].a){case 0:s=s.fU(a,1)
+switch(B.FS[A.e0(r)].a){case 0:s=s.fU(a,1)
 r=s[0]
 r.toString
 A.e0(r)
@@ -25053,7 +25053,7 @@ a0t(a){var s=a/100
 return(s<=0.0031308?s*12.92:1.055*Math.pow(s,0.4166666666666667)-0.055)*255},
 anV(a){var s=Math.pow(Math.abs(a),0.42)
 return A.o8(a)*400*s/(s+27.13)},
-anW(a){var s=A.lK(a,B.I_),r=A.anV(s[0]),q=A.anV(s[1]),p=A.anV(s[2])
+anW(a){var s=A.lK(a,B.HZ),r=A.anV(s[0]),q=A.anV(s[1]),p=A.anV(s[2])
 return Math.atan2((r+q-2*p)/9,(11*r+-12*q+p)/11)},
 aCt(a,b){var s,r,q,p,o,n=B.i.bD(b,4)<=1?0:100,m=(b&1)===0?0:100
 if(b<4){s=(a-n*0.7152-m*0.0722)/0.2126
@@ -25416,7 +25416,7 @@ $1(a){this.a.b=A.ax0(a.getOutputBounds(A.cq(this.b)))},
 $S:2}
 A.qe.prototype={
 ga80(){var s,r,q=new Float32Array(20)
-for(s=this.a,r=0;r<20;++r)if(B.b.q(B.FI,r))q[r]=s[r]/255
+for(s=this.a,r=0;r<20;++r)if(B.b.q(B.FH,r))q[r]=s[r]/255
 else q[r]=s[r]
 return q},
 qq(){return $.aB.aX().ColorFilter.MakeMatrix(this.ga80())},
@@ -26243,7 +26243,7 @@ tF(){var s=this.Q
 s===$&&A.a()
 return s},
 tG(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Hu
+if(a<0||b<0)return B.Hr
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -26262,7 +26262,7 @@ l.push(new A.dw(n[0],n[1],n[2],n[3],B.jS[m]))}return l},
 cp(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
-r=B.GS[J.aa(s.affinity.value)]
+r=B.GP[J.aa(s.affinity.value)]
 return new A.a4(J.aa(s.pos),r)},
 He(a){var s=this.a
 s===$&&A.a()
@@ -26503,7 +26503,7 @@ j(a,b){if(b==null)return!1
 if(!(b instanceof A.wv))return!1
 return b.d===this.d&&b.b==this.b&&A.fr(b.c,this.c)},
 gu(a){var s=this,r=s.c
-return A.H(s.d,s.a,s.b,A.bf(r==null?B.Hy:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.H(s.d,s.a,s.b,A.bf(r==null?B.Hv:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 $ifB:1}
 A.vu.prototype={
 PO(a,b){var s=this.Kc(a),r=A.aN(new A.WW(this,b,s))
@@ -26759,7 +26759,7 @@ A.na.prototype={
 G(){return"CanvasKitVariant."+this.b}}
 A.a_e.prototype={
 glh(){var s=this.b,r=s==null?null:s.canvasKitVariant
-return A.aC_(B.H4,r==null?"auto":r)},
+return A.aC_(B.H0,r==null?"auto":r)},
 gDV(){var s,r=this.b
 if(r==null)s=null
 else{r=r.canvasKitMaximumSurfaces
@@ -28552,7 +28552,7 @@ if(e.b){q=t.f
 d=q.a(q.a(B.bI.fu(a2)).h(0,"data"))
 c=A.cy(d.h(0,"message"))
 if(c!=null&&c.length!==0){b=A.ao7(d,"assertiveness")
-e.a.Q0(c,B.Gb[b==null?0:b])}}a.ex(a3,B.bI.bP(!0))
+e.a.Q0(c,B.Ga[b==null?0:b])}}a.ex(a3,B.bI.bP(!0))
 return
 case"flutter/navigation":q=a.gcA().b
 p=t.e8
@@ -31353,7 +31353,7 @@ if(m.f!==B.ng){m.f=B.ng
 m.Mu()}}return m.d.a.W4(a)},
 Mu(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-W3(a){if(B.b.q(B.Hi,a))return this.f===B.fU
+W3(a){if(B.b.q(B.Hf,a))return this.f===B.fU
 return!1}}
 A.ZX.prototype={
 $0(){return new A.iB(Date.now(),0,!1)},
@@ -32843,7 +32843,7 @@ m=A.fo(s.h(0,"fontWeightIndex"))
 l=m!=null?A.apI(m):"normal"
 r=A.aph(s.h(0,"fontSize"))
 if(r==null)r=null
-p=new A.aaU(new A.Zm(r,l,A.cy(s.h(0,"fontFamily")),B.G9[o],B.jS[n]))
+p=new A.aaU(new A.Zm(r,l,A.cy(s.h(0,"fontFamily")),B.G8[o],B.jS[n]))
 break
 case"TextInput.clearClient":p=B.B5
 break
@@ -38190,7 +38190,7 @@ if(o>0)return s
 return null}}
 A.acJ.prototype={
 E(a,b){this.K9(b,0,b.length,!1)},
-bg(){this.K9(B.Hn,0,0,!0)}}
+bg(){this.K9(B.Hk,0,0,!0)}}
 A.akX.prototype={
 K9(a,b,c,d){var s=this.b.agb(a,b,c,d)
 if(s!=null)this.a.mw(s,0,s.length,d)}}
@@ -40397,7 +40397,7 @@ h=r[4]
 g=r[5]
 f=r[6]
 e=r[7]
-for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Gn[q]+s[q]>>>0)>>>0)>>>0
+for(d=l,q=0;q<64;++q,e=f,f=g,g=h,h=b,i=j,j=k,k=d,d=a){c=(e+(((h>>>6|h<<26)^(h>>>11|h<<21)^(h>>>25|h<<7))>>>0)>>>0)+(((h&g^~h&f)>>>0)+(B.Gl[q]+s[q]>>>0)>>>0)>>>0
 b=i+c>>>0
 a=c+((((d>>>2|d<<30)^(d>>>13|d<<19)^(d>>>22|d<<10))>>>0)+((d&k^d&j^k&j)>>>0)>>>0)>>>0}r.$flags&2&&A.ac(r)
 r[0]=d+l>>>0
@@ -41337,7 +41337,7 @@ r=A.y2(B.KL,B.h,r==null?1:r)
 r.toString
 q=p.ae(q.gt())
 if(q==null)q=1
-return A.aur(A.atx(null,B.o,new A.r8(q,B.GJ,new A.cw(B.zR,this.e)),s,1,B.OX),r)}}
+return A.aur(A.atx(null,B.o,new A.r8(q,B.GG,new A.cw(B.zR,this.e)),s,1,B.OX),r)}}
 A.En.prototype={
 l(){var s=this,r=s.by$
 if(r!=null)r.I(s.ght())
@@ -44474,7 +44474,7 @@ r=n.w
 n=n.cx
 q=p.ga7o()
 p.a.toString
-return new A.AN(o,r,o,new A.agw(),o,o,o,o,o,o,B.K0,o,o,m,B.Hp,p.ga7v(),n,o,B.RS,s,o,q,o,o,B.nD,!1,!1,o,o,o,new A.nI(p,t.bT))},
+return new A.AN(o,r,o,new A.agw(),o,o,o,o,o,o,B.K0,o,o,m,B.Hm,p.ga7v(),n,o,B.RS,s,o,q,o,o,B.nD,!1,!1,o,o,o,new A.nI(p,t.bT))},
 L(a){var s,r=this.a0w(a)
 this.a.toString
 s=this.d
@@ -44579,7 +44579,7 @@ A.tG.prototype={
 G(){return"_CornerId."+this.b}}
 A.kE.prototype={}
 A.ra.prototype={
-k5(){var s,r,q,p=this,o=A.aIM(B.H8,new A.a4g(p,p.b.gaU().V(0,p.a.gaU()))),n=p.a
+k5(){var s,r,q,p=this,o=A.aIM(B.H4,new A.a4g(p,p.b.gaU().V(0,p.a.gaU()))),n=p.a
 n.toString
 s=o.a
 r=p.nV(n,s)
@@ -48138,7 +48138,7 @@ r.f=s.d},
 $S:0}
 A.IB.prototype={
 L(a){var s=this.c.S(0,new A.h(0,40.95))
-return A.atx(A.Gk(null,B.Co,!0),B.ab,new A.r8(1,B.HK,new A.cw(B.zP,B.p)),s,1.25,B.OY)}}
+return A.atx(A.Gk(null,B.Co,!0),B.ab,new A.r8(1,B.HI,new A.cw(B.zP,B.p)),s,1.25,B.OY)}}
 A.o7.prototype={
 G(){return"MaterialType."+this.b}}
 A.xz.prototype={
@@ -48524,7 +48524,7 @@ gnq(){return B.ef},
 DS(a,b,c,d,e,f){return A.aAZ(a,b,c,d,e,f)}}
 A.Je.prototype={
 a_X(a){var s=t.Tr
-s=A.U(new A.Y(B.H7,new A.a5r(a),s),s.i("ae.E"))
+s=A.U(new A.Y(B.H3,new A.a5r(a),s),s.i("ae.E"))
 return s},
 j(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -53084,7 +53084,7 @@ return new A.ls(r.a.cO(s.ghL()),r.b,r.c)},
 cp(a){var s=this.b
 return s.a.c.cp(a.V(0,s.ghL()))},
 oy(){var s,r,q=this.b,p=q.ghL()
-if(!isFinite(p.a)||!isFinite(p.b))return B.Hv
+if(!isFinite(p.a)||!isFinite(p.b))return B.Hs
 s=q.f
 if(s==null){s=q.a.c.oy()
 q.f=s}if(p.j(0,B.h))r=s
@@ -61124,7 +61124,7 @@ break
 case 1:return A.L(q,r)}})
 return A.M($async$By,r)},
 a39(a,b){var s,r,q,p
-if(a===b)return B.Ht
+if(a===b)return B.Hq
 s=A.c([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.kr(B.er,a)
@@ -62989,7 +62989,7 @@ A.kc.prototype={}
 A.Jx.prototype={
 kt(a,b){var s,r,q,p,o,n=$.V.a6$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.r,r=0;r<2;++r){q=B.Hj[r]
+for(s=t.r,r=0;r<2;++r){q=B.Hg[r]
 p=n.e
 p.toString
 o=A.ana(p,q,s)
@@ -64454,7 +64454,7 @@ q.bi()
 q.cj$.E(0,s.ga82())
 s.e=q}return q},
 gMa(){var s=this.f
-return s===$?this.f=new A.aen(1,B.G8,B.bG):s},
+return s===$?this.f=new A.aen(1,B.G7,B.bG):s},
 gfY(){var s=this.z
 s=s==null?null:$.bK().d===s
 return s===!0},
@@ -65115,7 +65115,7 @@ h.Dl()
 r=h.ga3S()
 q=q.rI
 h.e!==$&&A.aX()
-h.e=new A.KG(s,new A.bX(B.JN,l),new A.o3(),p,B.bZ,0,k,h.ga5Q(),h.ga5S(),r,B.bZ,0,j,h.ga5K(),h.ga5M(),r,i,B.HA,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Gr(),new A.Gr())
+h.e=new A.KG(s,new A.bX(B.JN,l),new A.o3(),p,B.bZ,0,k,h.ga5Q(),h.ga5S(),r,B.bZ,0,j,h.ga5K(),h.ga5M(),r,i,B.Hx,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Gr(),new A.Gr())
 return h},
 uG(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -68472,7 +68472,7 @@ j(a,b){var s=this
 if(b==null)return!1
 if(J.J(b)!==A.l(s))return!1
 return b instanceof A.c2&&b.a===s.a&&b.b==s.b&&b.d===s.d&&A.c7(null,null)},
-gu(a){return A.H(this.a,this.b,null,this.d,A.bf(B.Hw),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gu(a){return A.H(this.a,this.b,null,this.d,A.bf(B.Ht),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.ti(B.i.lX(this.a,16).toUpperCase(),5,"0")+")"}}
 A.nN.prototype={
 co(a){return!this.w.j(0,a.w)},
@@ -69533,7 +69533,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 a2=a3==null?a2.b.c.Q:a3
-a=new A.xF(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.qB(a1),B.Hs,e===!0,d,c,b,a2)
+a=new A.xF(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.qB(a1),B.Hp,e===!0,d,c,b,a2)
 if(!a.j(0,a0.e))a0.ad(new A.agN(a0,a))},
 wI(){if(this.d==null)this.ol()},
 Ew(){this.ol()},
@@ -69838,7 +69838,7 @@ r.R(0,s.Uq(null,l))
 l.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.Hq[p]
+for(;!1;++p){o=B.Hn[p]
 n=l.c
 n.toString
 m=new A.fR(o.Eh(n),null,!0,B.lj,B.bJ,new A.pG(new ($.Vi())(B.bJ)),B.bJ)
@@ -70193,7 +70193,7 @@ L(a){var s,r,q=this,p=null,o=q.ga5o(),n=A.lp(a),m=q.bz$,l=q.d
 l===$&&A.a()
 s=q.a.ay
 if(l.gK()==null){r=q.gJf()
-r=J.lB(r.slice(0),A.W(r).c)}else r=B.Hr
+r=J.lB(r.slice(0),A.W(r).c)}else r=B.Ho
 return new A.nL(p,new A.dF(new A.a54(q,a),A.xq(B.bP,new A.Fg(!1,A.anL(A.qK(!0,p,A.LT(m,new A.rm(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),n),p),o,q.ga7V(),p,p,o),p,t.w3),p)}}
 A.a53.prototype={
 $1(a){var s=this.a.c
@@ -75252,7 +75252,7 @@ r.vM()
 return s.aQ()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gBA(),p=0;p<s.length;s.length===r||(0,A.u)(s),++p)s[p].I(q)
-o.b=B.Ho
+o.b=B.Hl
 o.y=!1
 o.d1()},
 dm(a,b){return a.lo(b)},
@@ -75914,7 +75914,7 @@ g.p2=A.q(t.D2,q)
 p=g.p1
 s=s.c
 g.p1=A.q(s,q)
-for(o=0;o<11;++o){n=B.Gv[o]
+for(o=0;o<11;++o){n=B.Gs[o]
 m=f.ae6(n)
 l=m==null?null:m.a
 k=p.h(0,n)
@@ -83105,7 +83105,7 @@ B.Be=new A.abF()
 B.af=new A.abI()
 B.cs=new A.abK()
 B.dI=new A.M_(0,0,0,0)
-B.Hs=s([],A.aq("x<aLL>"))
+B.Hp=s([],A.aq("x<aLL>"))
 B.WH=new A.abQ()
 B.bd={}
 B.tH=new A.bD(B.bd,[],t.li)
@@ -83685,38 +83685,38 @@ B.ny=new A.xn(0,"opportunity")
 B.jR=new A.xn(2,"mandatory")
 B.nz=new A.xn(3,"endOfText")
 B.Fe=new A.xp(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Hc=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
-B.GI=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
+B.H8=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.GF=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.Ij=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.Fh=s([B.Hc,B.GI,B.Ij],t.zg)
+B.Fh=s([B.H8,B.GF,B.Ij],t.zg)
 B.nA=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
-B.FI=s([4,9,14,19],t.t)
-B.HU=s([137,80,78,71,13,10,26,10],t.Z)
+B.FH=s([4,9,14,19],t.t)
+B.HT=s([137,80,78,71,13,10,26,10],t.Z)
 B.EG=new A.lv(0,"png")
 B.EO=new A.iM(B.EG,!1,0,"png")
-B.EE=new A.jV(B.HU,B.EO,0,"png")
-B.HW=s([71,73,70,56,55,97],t.Z)
-B.ED=new A.jV(B.HW,B.fW,1,"gif87a")
-B.H6=s([71,73,70,56,57,97],t.Z)
-B.EC=new A.jV(B.H6,B.fW,2,"gif89a")
+B.EE=new A.jV(B.HT,B.EO,0,"png")
+B.HV=s([71,73,70,56,55,97],t.Z)
+B.ED=new A.jV(B.HV,B.fW,1,"gif87a")
+B.H2=s([71,73,70,56,57,97],t.Z)
+B.EC=new A.jV(B.H2,B.fW,2,"gif89a")
 B.Fj=s([255,216,255],t.Z)
 B.EH=new A.lv(2,"jpeg")
 B.ES=new A.iM(B.EH,!1,3,"jpeg")
 B.EF=new A.jV(B.Fj,B.ES,3,"jpeg")
-B.G7=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
-B.EB=new A.jV(B.G7,B.ns,4,"webp")
-B.FW=s([66,77],t.Z)
+B.G6=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
+B.EB=new A.jV(B.G6,B.ns,4,"webp")
+B.FV=s([66,77],t.Z)
 B.EI=new A.lv(4,"bmp")
 B.EQ=new A.iM(B.EI,!1,6,"bmp")
-B.EA=new A.jV(B.FW,B.EQ,5,"bmp")
-B.FK=s([B.EE,B.ED,B.EC,B.EF,B.EB,B.EA],A.aq("x<jV>"))
+B.EA=new A.jV(B.FV,B.EQ,5,"bmp")
+B.FJ=s([B.EE,B.ED,B.EC,B.EF,B.EB,B.EA],A.aq("x<jV>"))
 B.lk=new A.D_(0,"named")
 B.zz=new A.D_(1,"anonymous")
-B.FT=s([B.lk,B.zz],A.aq("x<D_>"))
-B.GM=s([0.41233895,0.35762064,0.18051042],t.n)
-B.Gg=s([0.2126,0.7152,0.0722],t.n)
-B.Ib=s([0.01932141,0.11916382,0.95034478],t.n)
-B.cz=s([B.GM,B.Gg,B.Ib],t.zg)
+B.FS=s([B.lk,B.zz],A.aq("x<D_>"))
+B.GJ=s([0.41233895,0.35762064,0.18051042],t.n)
+B.Gf=s([0.2126,0.7152,0.0722],t.n)
+B.Ia=s([0.01932141,0.11916382,0.95034478],t.n)
+B.cz=s([B.GJ,B.Gf,B.Ia],t.zg)
 B.nB=s([0,4,12,1,5,13,3,7,15],t.t)
 B.VC=new A.fk(0,1)
 B.VH=new A.fk(0.5,1)
@@ -83729,96 +83729,29 @@ B.VL=new A.fk(0.8875,0.25)
 B.VJ=new A.fk(0.925,0.5)
 B.VD=new A.fk(0.9625,0.75)
 B.VE=new A.fk(1,1)
-B.G8=s([B.VC,B.VH,B.VK,B.VM,B.VI,B.VG,B.VF,B.VL,B.VJ,B.VD,B.VE],A.aq("x<fk>"))
+B.G7=s([B.VC,B.VH,B.VK,B.VM,B.VI,B.VG,B.VF,B.VL,B.VJ,B.VD,B.VE],A.aq("x<fk>"))
 B.ch=new A.ko(0,"left")
 B.dD=new A.ko(1,"right")
 B.hS=new A.ko(2,"center")
 B.eY=new A.ko(3,"justify")
 B.b_=new A.ko(4,"start")
 B.hT=new A.ko(5,"end")
-B.G9=s([B.ch,B.dD,B.hS,B.eY,B.b_,B.hT],A.aq("x<ko>"))
-B.Gq=s([2,1.13276676],t.n)
-B.Fm=s([2.18349805,1.20311921],t.n)
-B.HF=s([2.33888662,1.28698796],t.n)
-B.HJ=s([2.48660575,1.36351941],t.n)
-B.Gc=s([2.62226596,1.44717976],t.n)
-B.Gi=s([2.7514899,1.53385819],t.n)
-B.H3=s([3.36298265,1.98288283],t.n)
-B.Gy=s([4.08649929,2.23811846],t.n)
-B.GR=s([4.85481134,2.47563463],t.n)
-B.Gf=s([5.62945551,2.72948597],t.n)
-B.Gr=s([6.43023796,2.98020421],t.n)
-B.nC=s([B.Gq,B.Fm,B.HF,B.HJ,B.Gc,B.Gi,B.H3,B.Gy,B.GR,B.Gf,B.Gr],t.zg)
-B.Gb=s([B.ir,B.is],A.aq("x<vc>"))
-B.Ge=s([18,15,10,12,15,18,15,12,12],t.n)
-B.Gn=s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],t.t)
-B.Ig=s(["Flutter","Dart","Supabase","Realtime","Push Notifications","Cross-platform"],t.s)
-B.G4=s(["Real-time messaging with sub-second delivery using Supabase Realtime","Online/offline presence indicators with last-seen timestamps","Media sharing including images, documents, and voice messages","Group chat creation and management with admin controls","Message read receipts and typing indicators","Push notifications for background message delivery","End-to-end message history with search functionality","Clean Material Design UI with smooth animations"],t.s)
-B.Hh=s(["Supabase Realtime for sub-second message delivery","Presence system with online/offline indicators and last-seen tracking","Media upload pipeline for images, documents, and voice messages","Group management with admin controls and member permissions","Message indexing for full-text search across history","Push notification service for background delivery"],t.s)
-B.FH=s(["Achieving sub-second message delivery with reliable ordering guarantees","Implementing presence indicators that accurately reflect user connectivity state","Building media sharing with efficient upload, compression, and delivery across platforms","Designing group chat with admin controls that scale to large member counts","Ensuring message history search performs well across large conversation archives"],t.s)
-B.GL=s(["Real-time messaging app with instant delivery","Presence and typing indicator system","Media sharing with images, documents, and voice","Group chat with admin management","Push notification infrastructure for background delivery"],t.s)
-B.Md=new A.cS("pinglet","Pinglet","Real-Time Chat Application","Communication","A modern, performant real-time messaging application with instant message delivery, presence indicators, media sharing, and group conversation support.",B.Ig,B.G4,B.Hh,B.FH,B.GL,!0)
-B.FY=s(["Flutter","Dart","Supabase","Python","FastAPI","AI","Ollama","Computer Vision","Analytics"],t.s)
-B.H2=s(["Real-time video feed analysis with computer vision models for anomaly detection","Face detection and recognition with configurable alert thresholds","Violence and aggressive behaviour detection using trained ML models","Analytics dashboard with heat maps, incident timelines, and trend analysis","Multi-camera support with centralised monitoring interface","Alert system with configurable escalation workflows","Historical incident search with video playback and evidence export","Python AI pipeline with Ollama integration for contextual analysis"],t.s)
-B.H0=s(["Real-time computer vision pipeline for video feed analysis","Face detection and recognition with configurable threshold engine","ML model inference for violence and behaviour detection","Multi-camera video stream management with centralised processing","Alert escalation workflow engine with configurable rules","Historical data indexing for incident search and evidence retrieval"],t.s)
-B.Gs=s(["Processing multiple real-time video feeds with minimal latency for anomaly detection","Training and deploying violence detection ML models with acceptable accuracy rates","Implementing facial recognition with configurable thresholds to balance security and privacy","Building a scalable multi-camera architecture that handles concurrent video streams","Designing an evidence export system that maintains chain-of-custody integrity"],t.s)
-B.Gk=s(["Real-time video surveillance and analysis platform","Computer vision models for anomaly and violence detection","Facial recognition system with configurable alerts","Multi-camera centralised monitoring dashboard","Historical incident search and evidence export system"],t.s)
-B.Mf=new A.cS("reconvision","ReconVision","AI Platform for Crime & Anomaly Detection","AI","Advanced AI-powered surveillance and analytics platform combining computer vision for crime detection, facial recognition, violence detection, and behavioural analytics in real-time video feeds.",B.FY,B.H2,B.H0,B.Gs,B.Gk,!0)
-B.HR=s(["Flutter","Dart","Supabase","Python","FastAPI","AI","Ollama","Real-time DB","Cross-platform"],t.s)
-B.He=s(["AI-powered concierge chatbot using Ollama LLM for natural guest interactions","Smart room booking with dynamic pricing and availability optimisation","Guest preference learning system for personalised service recommendations","Real-time communication between guests and hotel staff via chat","Integration with hotel PMS for room status, housekeeping, and maintenance","Multi-property support with centralised management dashboard","Supabase real-time database for instant updates across all clients","Python FastAPI backend with AI pipeline orchestration"],t.s)
-B.HG=s(["AI pipeline orchestration with Ollama LLM for natural language processing","Guest preference ML model for personalised recommendations","Supabase real-time subscriptions for instant cross-client updates","FastAPI backend with async AI inference pipeline","Multi-property architecture with centralised management layer","Hotel PMS integration layer for room and housekeeping status"],t.s)
-B.H5=s(["Integrating Ollama LLM for natural conversational AI in a hospitality context","Building a guest preference learning system that improves recommendations over time","Implementing dynamic pricing algorithms with real-time availability optimisation","Ensuring real-time communication reliability across multiple hotel properties","Orchestrating AI inference pipelines without impacting response latency"],t.s)
-B.I6=s(["AI-powered concierge chatbot with natural language understanding","Smart room booking system with dynamic pricing","Real-time guest-staff communication platform","Multi-property management dashboard","Guest preference learning and recommendation engine"],t.s)
-B.Me=new A.cS("digital-butler","Digital Butler","AI-Powered Hotel & Resort Guest Management Platform","Hospitality","An intelligent hospitality platform leveraging AI to provide personalised guest experiences \u2014 from smart room booking and concierge services to AI-driven recommendations and guest communication.",B.HR,B.He,B.HG,B.H5,B.I6,!0)
-B.GQ=s(["Flutter","Dart","Supabase","Python","FastAPI","AI","Ollama","OCR","Real-time Tracking"],t.s)
-B.I8=s(["AI-driven shipment registration with automatic data extraction from documents","Real-time GPS tracking with estimated delivery time predictions","Route optimisation engine using ML models for cost and time efficiency","Automated status updates with intelligent notification triggers","Document scanning and OCR for bills of lading and shipping labels","Analytics dashboard with shipment performance metrics and trends","Multi-carrier integration with unified tracking interface","Supabase real-time sync for instant status propagation"],t.s)
-B.H9=s(["AI-driven document processing with OCR extraction pipeline","ML-based route optimisation engine for cost and time efficiency","Real-time GPS tracking with delivery prediction algorithms","Supabase real-time sync for instant multi-client status propagation","Multi-carrier abstraction layer with unified tracking interface","Intelligent notification engine with configurable triggers"],t.s)
-B.HB=s(["Building OCR pipeline that accurately extracts data from diverse shipping documents","Implementing ML-based route optimisation that balances cost, time, and reliability","Real-time GPS tracking with accurate delivery time predictions under variable conditions","Multi-carrier integration with different API formats and tracking protocols","Designing intelligent notification triggers that avoid alert fatigue"],t.s)
-B.Ic=s(["AI-powered shipment registration with document OCR","Real-time GPS tracking and delivery prediction system","Route optimisation engine with ML models","Multi-carrier unified tracking platform","Analytics dashboard with performance metrics"],t.s)
-B.Mc=new A.cS("smartlogix","SmartLogix","AI-Powered Shipment & Logistics Tracking Platform","Logistics","Intelligent logistics platform that uses AI for shipment registration, route optimisation, delivery prediction, and real-time tracking \u2014 transforming traditional shipping workflows.",B.GQ,B.I8,B.H9,B.HB,B.Ic,!1)
-B.GK=s(["Flutter","Dart","Supabase","Charts","Cross-platform","Biometric Auth"],t.s)
-B.Hl=s(["Expense recording with category tagging and receipt photo capture","Budget creation with configurable limits and overspend alerts","Interactive charts and graphs for spending pattern visualisation","Monthly and yearly financial summaries with export capability","Recurring expense tracking with automatic categorisation","Multi-currency support with real-time conversion rates","Secure authentication with biometric login support","Cloud sync via Supabase for multi-device access"],t.s)
-B.I4=s(["Biometric authentication with secure local credential storage","Chart rendering engine for interactive spending visualisations","Recurring expense engine with automatic categorisation rules","Multi-currency layer with real-time conversion rate fetching","Supabase cloud sync for multi-device data consistency","Export pipeline for financial summaries in multiple formats"],t.s)
-B.GO=s(["Implementing biometric authentication across diverse device hardware","Building interactive charts that render smoothly with large datasets","Designing recurring expense logic with accurate automatic categorisation","Multi-currency conversion with reliable rate sources and offline fallback","Cloud sync that handles conflicts when editing from multiple devices"],t.s)
-B.Hb=s(["Personal finance tracking app with expense and budget management","Interactive charts and spending pattern visualisation","Multi-currency support with real-time conversion","Biometric authentication and secure access","Cloud-synced multi-device experience"],t.s)
-B.Mg=new A.cS("finance","Finance App","Personal Finance & Expense Tracking","Finance","A personal finance management application enabling users to track expenses, set budgets, visualise spending patterns, and gain insights into their financial habits.",B.GK,B.Hl,B.I4,B.GO,B.Hb,!1)
-B.Go=s([".NET MAUI","C#","SQLite","MVVM","Local Storage","Cross-platform"],t.s)
-B.FZ=s(["Service queue management with real-time status tracking","Customer profile management with wash history and preferences","Multiple wash package configuration with pricing tiers","Offline-capable SQLite storage for uninterrupted operations","Staff scheduling and performance tracking dashboards","Revenue reporting with daily, weekly, and monthly breakdowns","Push notifications for service completion and promotional offers","Clean MVVM architecture ensuring maintainability and testability"],t.s)
-B.Fi=s(["Clean MVVM architecture with dependency injection","Offline-first SQLite storage for uninterrupted field operations","Queue management system with real-time status propagation","Revenue analytics engine with configurable time-period breakdowns","Push notification service for customer engagement"],t.s)
-B.Gu=s(["Designing a real-time queue management system that works reliably offline","Building configurable pricing tiers with dynamic wash package management","Implementing staff scheduling with performance tracking and conflict avoidance","Creating revenue reporting with accurate daily, weekly, and monthly aggregations","Ensuring push notifications are delivered reliably for service completion alerts"],t.s)
-B.Gh=s(["Complete car wash management mobile application","Service queue and customer management system","Staff scheduling and performance dashboards","Revenue analytics and reporting module","Offline-capable cross-platform app"],t.s)
-B.Mi=new A.cS("logicwash","LogicWash","Commercial Car Wash Management Solution","Logistics","A streamlined mobile solution for managing commercial car wash operations \u2014 handling service queues, customer management, wash tracking, and operational analytics.",B.Go,B.FZ,B.Fi,B.Gu,B.Gh,!1)
-B.GN=s(["Xamarin.Forms",".NET MAUI","C#","SQLite","SQL Server",".NET Core API","MVVM","REST APIs"],t.s)
-B.GF=s(["Patient registration and record management with search and filtering","Medicine inventory tracking with stock alerts and expiry management","Appointment scheduling with provider calendars and automated reminders","Migrated entire codebase from Xamarin.Forms to .NET MAUI","Improved startup time and memory efficiency via framework optimisation","REST API integration for secure, real-time backend communication","Resolved Android/iOS platform-specific UI and compatibility issues","Extensive testing, debugging, and production performance tuning"],t.s)
-B.Id=s(["Full codebase migration from Xamarin.Forms to .NET MAUI","Performance-optimised startup and memory management","Platform-specific renderers for Android/iOS compatibility","REST API layer with secure authentication and real-time sync","Inventory management module with alert-based triggers"],t.s)
-B.If=s(["Migrating a large production codebase from Xamarin.Forms to .NET MAUI without downtime","Optimising application startup time and memory usage on resource-constrained devices","Resolving platform-specific rendering issues across Android and iOS simultaneously","Building a reliable medicine inventory system with real-time stock alerts","Performance tuning for production-scale data with search and filtering"],t.s)
-B.Ik=s(["Complete hospital management mobile application","Successful Xamarin.Forms to .NET MAUI migration","Performance-optimised app with improved startup and memory usage","Patient records, inventory, and appointment management modules","Cross-platform compatibility across Android and iOS"],t.s)
-B.Mk=new A.cS("smd-mobile","SMD Mobile","Hospital & Clinic Management System","Healthcare","Comprehensive hospital and clinic management mobile application covering patient records, medicine inventory, appointment scheduling, and clinical workflow automation.",B.GN,B.GF,B.Id,B.If,B.Ik,!1)
-B.HL=s(["Xamarin.Forms",".NET MAUI","C#","SQLite","SQL Server",".NET Core API","MVVM","Offline Sync"],t.s)
-B.HD=s(["Dynamic consent form builder with e-signature capture and PDF generation","Configurable medical questionnaires with conditional logic and branching","Complete medical history intake with allergies, medications, and conditions","Offline-first SQLite storage with intelligent background synchronisation","Migrated from Xamarin.Forms to .NET MAUI for long-term platform support","Barcode scanning for patient identification and record lookup","Multi-language support for diverse patient demographics","Seamless integration with backend .NET Core APIs and SQL Server"],t.s)
-B.HI=s(["Form engine with conditional logic, branching, and dynamic rendering","E-signature capture with PDF generation pipeline","Offline-first SQLite with conflict resolution and background sync","Migration architecture from Xamarin.Forms to .NET MAUI","Barcode scanning integration for patient identification","Localisation framework for multi-language support"],t.s)
-B.HS=s(["Designing a flexible form builder engine supporting conditional logic and branching paths","Migrating a production Xamarin.Forms app to .NET MAUI while maintaining feature parity","Implementing e-signature capture that produces legally valid PDF documents","Building reliable offline sync with conflict resolution for medical data","Supporting barcode scanning across diverse device hardware capabilities"],t.s)
-B.G6=s(["Digital patient intake system replacing paper workflows","Dynamic form builder with e-signature and PDF generation","Successfully migrated application from Xamarin.Forms to .NET MAUI","Offline-capable data layer with intelligent synchronisation","Multi-language patient-facing interface"],t.s)
-B.Mh=new A.cS("clipboard","Clipboard","Patient Intake & Clinical Workflow Management","Healthcare","Digital patient intake solution replacing paper-based processes \u2014 handling appointments, consent forms, questionnaires, and medical history management with seamless offline support.",B.HL,B.HD,B.HI,B.HS,B.G6,!1)
-B.I2=s(["Xamarin.Forms","C#","ASP.NET Core API","SQL Server","HL7","HIPAA","MVVM","Push Notifications"],t.s)
-B.HX=s(["Built end-to-end appointment booking with provider availability and calendar sync","Implemented secure video consultation using WebRTC with encrypted streams","Developed real-time chat system with message history and push notifications","Integrated HL7/FHIR standards for healthcare data interoperability","Document upload/download with secure cloud storage and access control","HIPAA-compliant data handling with encryption at rest and in transit","Offline-first architecture with background sync for poor connectivity scenarios","Role-based access control separating patient, provider, and admin flows"],t.s)
-B.GU=s(["MVVM pattern with clean separation of concerns","Offline-first architecture with SQLite local cache and background synchronisation","WebRTC integration for peer-to-peer encrypted video streams","HL7/FHIR compliant data layer for healthcare interoperability","Role-based middleware for access control across patient, provider, and admin","Push notification service with real-time message delivery"],t.s)
-B.I9=s(["Ensuring HIPAA compliance across all data flows including video, chat, and document storage","Implementing reliable offline-first sync without data conflicts in a multi-user healthcare environment","Integrating WebRTC for video consultations with fallback mechanisms for unstable connections","Achieving HL7/FHIR interoperability with diverse hospital systems and EHR platforms","Managing encrypted data at rest and in transit while maintaining app performance"],t.s)
-B.HT=s(["Production-ready patient portal with appointment, video, chat, and document modules","HIPAA-compliant architecture documentation and security audit clearance","Offline-capable mobile app with intelligent background sync","HL7/FHIR integration layer for healthcare data exchange","Scalable push notification infrastructure"],t.s)
-B.Mj=new A.cS("healthx-patients","HealthxApp for Patients","Enterprise Healthcare Platform \u2013 Patient Portal","Healthcare","A comprehensive patient-facing mobile application enabling appointment scheduling, secure document management, HIPAA-compliant video consultations, and real-time chat with healthcare providers.",B.I2,B.HX,B.GU,B.I9,B.HT,!0)
-B.GT=s(["Xamarin.Forms","C#","ASP.NET Core API","SQL Server","HL7","HIPAA","MVVM","WebRTC"],t.s)
-B.Gm=s(["Appointment management dashboard with schedule overview and conflict detection","Patient document review system with annotation and approval workflows","Video consultation initiation with recording capability for medical records","Secure messaging with read receipts, typing indicators, and file sharing","Integration with hospital EMR systems via HL7 interfaces","Multi-location support for providers practising across clinics","Analytics dashboard showing consultation metrics and patient engagement","Notification system for urgent patient requests and schedule changes"],t.s)
-B.HV=s(["Dashboard-centric UI with real-time data refresh","HL7 interface layer for EMR system integration","WebRTC with recording pipeline for medical consultation archival","Multi-location data partitioning for provider context switching","Analytics engine with aggregated metrics and engagement scoring"],t.s)
-B.HQ=s(["Building a conflict detection system for multi-location appointment scheduling","Implementing video recording with HIPAA-compliant storage and retrieval","Integrating with multiple EMR systems each with different HL7 implementation versions","Designing an annotation system for medical documents with approval workflows","Real-time notification prioritisation for urgent vs routine patient communications"],t.s)
-B.G5=s(["Provider dashboard with appointment, document, and analytics modules","Video consultation system with recording and archival capability","HL7 integration adapters for hospital EMR connectivity","Multi-location provider management system","Real-time secure messaging platform with file sharing"],t.s)
-B.Mb=new A.cS("healthx-providers","HealthxApp for Providers","Enterprise Healthcare Platform \u2013 Provider Dashboard","Healthcare","Provider-facing companion application enabling doctors and clinical staff to manage appointments, review patient documents, conduct video consultations, and communicate securely with patients.",B.GT,B.Gm,B.HV,B.HQ,B.G5,!1)
-B.Gj=s([".NET MAUI","C#","MVVM","Cross-platform","Android","iOS"],t.s)
-B.H1=s(["Read local device images and videos with permission handling","Thumbnail grid for fast browsing of large media libraries","Full-screen image viewing with pinch-to-zoom and swipe gestures","Video playback with native controls for seamless media consumption","Android and iOS device build support with platform-specific optimisations","Efficient memory management for handling large media collections","Responsive grid layout adapting to device screen sizes","Native file system access for reading device storage"],t.s)
-B.Gx=s([".NET MAUI cross-platform architecture targeting Android and iOS","MVVM pattern for clean separation of UI and business logic","Platform-specific media access APIs with unified abstraction layer","Thumbnail caching strategy for performant grid rendering","Native video player integration with platform controls","Memory-efficient image loading with lazy thumbnail generation"],t.s)
-B.Gt=s(["Handling runtime permissions for media access across Android 12+ and iOS 15+","Efficient thumbnail generation without blocking the UI thread on large galleries","Managing memory pressure when loading hundreds of high-resolution images","Cross-platform video playback with consistent native controls on both platforms","Optimising grid scroll performance with virtualized lists and image recycling"],t.s)
-B.Fl=s(["Cross-platform gallery app for Android and iOS","Fast thumbnail grid with lazy loading","Full-screen image viewer with gesture support","Native video playback integration","Production builds for both Android and iOS devices"],t.s)
-B.Ma=new A.cS("galleryhub","GalleryHub","Smart Device Gallery & Media Viewer","AI","A .NET MAUI mobile gallery application that reads images and videos from the device, renders thumbnails for fast browsing, and opens selected media in a full-screen viewer with native video playback controls. Built with cross-platform support for Android and iOS.",B.Gj,B.H1,B.Gx,B.Gt,B.Fl,!1)
-B.dh=s([B.Md,B.Mf,B.Me,B.Mc,B.Mg,B.Mi,B.Mk,B.Mh,B.Mj,B.Mb,B.Ma],t.gd)
+B.G8=s([B.ch,B.dD,B.hS,B.eY,B.b_,B.hT],A.aq("x<ko>"))
+B.Go=s([2,1.13276676],t.n)
+B.Fl=s([2.18349805,1.20311921],t.n)
+B.HC=s([2.33888662,1.28698796],t.n)
+B.HH=s([2.48660575,1.36351941],t.n)
+B.Gb=s([2.62226596,1.44717976],t.n)
+B.Gh=s([2.7514899,1.53385819],t.n)
+B.H_=s([3.36298265,1.98288283],t.n)
+B.Gu=s([4.08649929,2.23811846],t.n)
+B.GO=s([4.85481134,2.47563463],t.n)
+B.Ge=s([5.62945551,2.72948597],t.n)
+B.Gp=s([6.43023796,2.98020421],t.n)
+B.nC=s([B.Go,B.Fl,B.HC,B.HH,B.Gb,B.Gh,B.H_,B.Gu,B.GO,B.Ge,B.Gp],t.zg)
+B.Ga=s([B.ir,B.is],A.aq("x<vc>"))
+B.Gd=s([18,15,10,12,15,18,15,12,12],t.n)
+B.Gl=s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],t.t)
 B.aw=new A.dZ(0,"icon")
 B.aG=new A.dZ(1,"input")
 B.a2=new A.dZ(2,"label")
@@ -83830,7 +83763,7 @@ B.aC=new A.dZ(7,"suffixIcon")
 B.br=new A.dZ(8,"helperError")
 B.bs=new A.dZ(9,"counter")
 B.ck=new A.dZ(10,"container")
-B.Gv=s([B.aw,B.aG,B.a2,B.aQ,B.aR,B.aS,B.a8,B.aC,B.br,B.bs,B.ck],A.aq("x<dZ>"))
+B.Gs=s([B.aw,B.aG,B.a2,B.aQ,B.aR,B.aS,B.a8,B.aC,B.br,B.bs,B.ck],A.aq("x<dZ>"))
 B.Il=new A.o1("en",null,"US")
 B.nD=s([B.Il],t.ss)
 B.nE=s([0,41,61,101,131,181,251,301,360],t.n)
@@ -83842,26 +83775,26 @@ B.Vt=new A.kF(8,0.12)
 B.Vs=new A.kF(12,0.14)
 B.nF=s([B.Vr,B.Vw,B.Vu,B.Vv,B.Vt,B.Vs],A.aq("x<kF>"))
 B.nG=s([0,21,51,121,151,191,271,321,360],t.n)
-B.GH=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
+B.GE=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
 B.zO=new A.FJ(2,"outer")
 B.m9=new A.D(0.09803921568627451,0,0,0,B.f)
 B.h=new A.h(0,0)
 B.Ab=new A.dj(0.2,B.zO,B.m9,B.h,11)
-B.GJ=s([B.Ab],t.sq)
+B.GG=s([B.Ab],t.sq)
 B.yE=new A.zT(0,"left")
 B.yF=new A.zT(1,"right")
-B.GP=s([B.yE,B.yF],A.aq("x<zT>"))
+B.GM=s([B.yE,B.yF],A.aq("x<zT>"))
 B.a_=new A.A5(0,"upstream")
-B.GS=s([B.a_,B.j],A.aq("x<A5>"))
+B.GP=s([B.a_,B.j],A.aq("x<A5>"))
 B.an=new A.Aa(0,"rtl")
 B.W=new A.Aa(1,"ltr")
 B.jS=s([B.an,B.W],A.aq("x<Aa>"))
 B.Bq=new A.na(0,"auto")
 B.Br=new A.na(1,"full")
 B.Bs=new A.na(2,"chromium")
-B.H4=s([B.Bq,B.Br,B.Bs,B.cb],A.aq("x<na>"))
+B.H0=s([B.Bq,B.Br,B.Bs,B.cb],A.aq("x<na>"))
 B.bg=new A.ev(1,"fuchsia")
-B.H7=s([B.ac,B.bg,B.H,B.b5,B.aB,B.b6],A.aq("x<ev>"))
+B.H3=s([B.ac,B.bg,B.H,B.b5,B.aB,B.b6],A.aq("x<ev>"))
 B.zf=new A.tG(0,"topLeft")
 B.zi=new A.tG(3,"bottomRight")
 B.Vm=new A.kE(B.zf,B.zi)
@@ -83870,7 +83803,7 @@ B.zg=new A.tG(1,"topRight")
 B.zh=new A.tG(2,"bottomLeft")
 B.Vn=new A.kE(B.zg,B.zh)
 B.Vo=new A.kE(B.zh,B.zg)
-B.H8=s([B.Vm,B.Vp,B.Vn,B.Vo],A.aq("x<kE>"))
+B.H4=s([B.Vm,B.Vp,B.Vn,B.Vo],A.aq("x<kE>"))
 B.MN=new A.ab(0.01339448,0.05994973)
 B.MM=new A.ab(0.13664115,0.13592082)
 B.Mz=new A.ab(0.24545546,0.14099516)
@@ -83886,42 +83819,42 @@ B.Mw=new A.ab(0.66416338,0.0734653)
 B.Mt=new A.ab(0.68675338,0.06974996)
 B.MJ=new A.ab(0.70678034,0.06529512)
 B.nH=s([B.MN,B.MM,B.Mz,B.MC,B.ML,B.Ms,B.Mx,B.MA,B.Mv,B.MI,B.MP,B.Mw,B.Mt,B.MJ],A.aq("x<+(Q,Q)>"))
-B.Hd=s([35,30,20,25,30,35,30,25,25],t.n)
-B.Hi=s(["click","scroll"],t.s)
+B.H9=s([35,30,20,25,30,35,30,25,25],t.n)
+B.Hf=s(["click","scroll"],t.s)
 B.Ah=new A.pV()
 B.eL=new A.Ky(1,"page")
 B.hw=new A.dI(B.b8,B.eL)
-B.Hj=s([B.Ah,B.hw],A.aq("x<aH>"))
-B.Ht=s([],t.QP)
+B.Hg=s([B.Ah,B.hw],A.aq("x<aH>"))
+B.Hq=s([],t.QP)
 B.nJ=s([],A.aq("x<aLt>"))
-B.Hx=s([],t.D)
-B.Hz=s([],t.fJ)
-B.Hv=s([],t.ER)
+B.Hu=s([],t.D)
+B.Hw=s([],t.fJ)
+B.Hs=s([],t.ER)
 B.WO=s([],t.ss)
-B.Hp=s([],t.tc)
+B.Hm=s([],t.tc)
 B.h0=s([],t.jl)
-B.Hr=s([],t.wi)
-B.Hq=s([],A.aq("x<atc<@>>"))
+B.Ho=s([],t.wi)
+B.Hn=s([],A.aq("x<atc<@>>"))
 B.jU=s([],t.AO)
-B.Ho=s([],t.D1)
+B.Hl=s([],t.D1)
 B.jT=s([],t.g)
-B.Hu=s([],t.Lx)
-B.HA=s([],t.AS)
+B.Hr=s([],t.Lx)
+B.Hx=s([],t.AS)
 B.WP=s([],t.p)
-B.Hy=s([],t.n)
-B.Hn=s([],t.t)
+B.Hv=s([],t.n)
+B.Hk=s([],t.t)
 B.nI=s([],t.ee)
-B.Hw=s([],t.XS)
+B.Ht=s([],t.XS)
 B.KJ=new A.h(0,2)
 B.Aa=new A.dj(0.75,B.cZ,B.m9,B.KJ,1.5)
-B.HK=s([B.Aa],t.sq)
+B.HI=s([B.Aa],t.sq)
 B.er=s([B.cn,B.c7,B.f7,B.f8,B.iq],t.QP)
-B.G_=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.Hk=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
-B.Gd=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.I_=s([B.G_,B.Hk,B.Gd],t.zg)
-B.I0=s([45,95,45,20,45,90,45,45,45],t.n)
-B.I1=s([120,120,20,45,20,15,20,120,120],t.n)
+B.FZ=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
+B.Hh=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.Gc=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
+B.HZ=s([B.FZ,B.Hh,B.Gc],t.zg)
+B.I_=s([45,95,45,20,45,90,45,45,45],t.n)
+B.I0=s([120,120,20,45,20,15,20,120,120],t.n)
 B.di=new A.fE(0,"controlModifier")
 B.dj=new A.fE(1,"shiftModifier")
 B.dk=new A.fE(2,"altModifier")
@@ -83933,6 +83866,73 @@ B.kd=new A.fE(7,"functionModifier")
 B.tO=new A.fE(8,"symbolModifier")
 B.nK=s([B.di,B.dj,B.dk,B.dl,B.ka,B.kb,B.kc,B.kd,B.tO],A.aq("x<fE>"))
 B.jV=s([!0,!1],t.HZ)
+B.Ig=s(["Flutter","Dart","Supabase","Realtime","Push Notifications","Cross-platform"],t.s)
+B.G3=s(["Real-time messaging with sub-second delivery using Supabase Realtime","Online/offline presence indicators with last-seen timestamps","Media sharing including images, documents, and voice messages","Group chat creation and management with admin controls","Message read receipts and typing indicators","Push notifications for background message delivery","End-to-end message history with search functionality","Clean Material Design UI with smooth animations"],t.s)
+B.He=s(["Supabase Realtime for sub-second message delivery","Presence system with online/offline indicators and last-seen tracking","Media upload pipeline for images, documents, and voice messages","Group management with admin controls and member permissions","Message indexing for full-text search across history","Push notification service for background delivery"],t.s)
+B.FG=s(["Achieving sub-second message delivery with reliable ordering guarantees","Implementing presence indicators that accurately reflect user connectivity state","Building media sharing with efficient upload, compression, and delivery across platforms","Designing group chat with admin controls that scale to large member counts","Ensuring message history search performs well across large conversation archives"],t.s)
+B.GI=s(["Real-time messaging app with instant delivery","Presence and typing indicator system","Media sharing with images, documents, and voice","Group chat with admin management","Push notification infrastructure for background delivery"],t.s)
+B.Mc=new A.cS("pinglet","Pinglet","Real-Time Chat Application","Communication","A modern, performant real-time messaging application with instant message delivery, presence indicators, media sharing, and group conversation support.",B.Ig,B.G3,B.He,B.FG,B.GI,!0)
+B.FX=s(["Flutter","Dart","Supabase","Python","FastAPI","AI","Ollama","Computer Vision","Analytics"],t.s)
+B.GZ=s(["Real-time video feed analysis with computer vision models for anomaly detection","Face detection and recognition with configurable alert thresholds","Violence and aggressive behaviour detection using trained ML models","Analytics dashboard with heat maps, incident timelines, and trend analysis","Multi-camera support with centralised monitoring interface","Alert system with configurable escalation workflows","Historical incident search with video playback and evidence export","Python AI pipeline with Ollama integration for contextual analysis"],t.s)
+B.GY=s(["Real-time computer vision pipeline for video feed analysis","Face detection and recognition with configurable threshold engine","ML model inference for violence and behaviour detection","Multi-camera video stream management with centralised processing","Alert escalation workflow engine with configurable rules","Historical data indexing for incident search and evidence retrieval"],t.s)
+B.Gq=s(["Processing multiple real-time video feeds with minimal latency for anomaly detection","Training and deploying violence detection ML models with acceptable accuracy rates","Implementing facial recognition with configurable thresholds to balance security and privacy","Building a scalable multi-camera architecture that handles concurrent video streams","Designing an evidence export system that maintains chain-of-custody integrity"],t.s)
+B.Gi=s(["Real-time video surveillance and analysis platform","Computer vision models for anomaly and violence detection","Facial recognition system with configurable alerts","Multi-camera centralised monitoring dashboard","Historical incident search and evidence export system"],t.s)
+B.Me=new A.cS("reconvision","ReconVision","AI Platform for Crime & Anomaly Detection","AI","Advanced AI-powered surveillance and analytics platform combining computer vision for crime detection, facial recognition, violence detection, and behavioural analytics in real-time video feeds.",B.FX,B.GZ,B.GY,B.Gq,B.Gi,!0)
+B.HP=s(["Flutter","Dart","Supabase","Python","FastAPI","AI","Ollama","Real-time DB","Cross-platform"],t.s)
+B.Hb=s(["AI-powered concierge chatbot using Ollama LLM for natural guest interactions","Smart room booking with dynamic pricing and availability optimisation","Guest preference learning system for personalised service recommendations","Real-time communication between guests and hotel staff via chat","Integration with hotel PMS for room status, housekeeping, and maintenance","Multi-property support with centralised management dashboard","Supabase real-time database for instant updates across all clients","Python FastAPI backend with AI pipeline orchestration"],t.s)
+B.HD=s(["AI pipeline orchestration with Ollama LLM for natural language processing","Guest preference ML model for personalised recommendations","Supabase real-time subscriptions for instant cross-client updates","FastAPI backend with async AI inference pipeline","Multi-property architecture with centralised management layer","Hotel PMS integration layer for room and housekeeping status"],t.s)
+B.H1=s(["Integrating Ollama LLM for natural conversational AI in a hospitality context","Building a guest preference learning system that improves recommendations over time","Implementing dynamic pricing algorithms with real-time availability optimisation","Ensuring real-time communication reliability across multiple hotel properties","Orchestrating AI inference pipelines without impacting response latency"],t.s)
+B.I5=s(["AI-powered concierge chatbot with natural language understanding","Smart room booking system with dynamic pricing","Real-time guest-staff communication platform","Multi-property management dashboard","Guest preference learning and recommendation engine"],t.s)
+B.Md=new A.cS("digital-butler","Digital Butler","AI-Powered Hotel & Resort Guest Management Platform","Hospitality","An intelligent hospitality platform leveraging AI to provide personalised guest experiences \u2014 from smart room booking and concierge services to AI-driven recommendations and guest communication.",B.HP,B.Hb,B.HD,B.H1,B.I5,!0)
+B.GN=s(["Flutter","Dart","Supabase","Python","FastAPI","AI","Ollama","OCR","Real-time Tracking"],t.s)
+B.I7=s(["AI-driven shipment registration with automatic data extraction from documents","Real-time GPS tracking with estimated delivery time predictions","Route optimisation engine using ML models for cost and time efficiency","Automated status updates with intelligent notification triggers","Document scanning and OCR for bills of lading and shipping labels","Analytics dashboard with shipment performance metrics and trends","Multi-carrier integration with unified tracking interface","Supabase real-time sync for instant status propagation"],t.s)
+B.H5=s(["AI-driven document processing with OCR extraction pipeline","ML-based route optimisation engine for cost and time efficiency","Real-time GPS tracking with delivery prediction algorithms","Supabase real-time sync for instant multi-client status propagation","Multi-carrier abstraction layer with unified tracking interface","Intelligent notification engine with configurable triggers"],t.s)
+B.Hy=s(["Building OCR pipeline that accurately extracts data from diverse shipping documents","Implementing ML-based route optimisation that balances cost, time, and reliability","Real-time GPS tracking with accurate delivery time predictions under variable conditions","Multi-carrier integration with different API formats and tracking protocols","Designing intelligent notification triggers that avoid alert fatigue"],t.s)
+B.Ib=s(["AI-powered shipment registration with document OCR","Real-time GPS tracking and delivery prediction system","Route optimisation engine with ML models","Multi-carrier unified tracking platform","Analytics dashboard with performance metrics"],t.s)
+B.Mb=new A.cS("smartlogix","SmartLogix","AI-Powered Shipment & Logistics Tracking Platform","Logistics","Intelligent logistics platform that uses AI for shipment registration, route optimisation, delivery prediction, and real-time tracking \u2014 transforming traditional shipping workflows.",B.GN,B.I7,B.H5,B.Hy,B.Ib,!1)
+B.GH=s(["Flutter","Dart","Supabase","Charts","Cross-platform","Biometric Auth"],t.s)
+B.Hi=s(["Expense recording with category tagging and receipt photo capture","Budget creation with configurable limits and overspend alerts","Interactive charts and graphs for spending pattern visualisation","Monthly and yearly financial summaries with export capability","Recurring expense tracking with automatic categorisation","Multi-currency support with real-time conversion rates","Secure authentication with biometric login support","Cloud sync via Supabase for multi-device access"],t.s)
+B.I3=s(["Biometric authentication with secure local credential storage","Chart rendering engine for interactive spending visualisations","Recurring expense engine with automatic categorisation rules","Multi-currency layer with real-time conversion rate fetching","Supabase cloud sync for multi-device data consistency","Export pipeline for financial summaries in multiple formats"],t.s)
+B.GL=s(["Implementing biometric authentication across diverse device hardware","Building interactive charts that render smoothly with large datasets","Designing recurring expense logic with accurate automatic categorisation","Multi-currency conversion with reliable rate sources and offline fallback","Cloud sync that handles conflicts when editing from multiple devices"],t.s)
+B.H7=s(["Personal finance tracking app with expense and budget management","Interactive charts and spending pattern visualisation","Multi-currency support with real-time conversion","Biometric authentication and secure access","Cloud-synced multi-device experience"],t.s)
+B.Mf=new A.cS("finance","Finance App","Personal Finance & Expense Tracking","Finance","A personal finance management application enabling users to track expenses, set budgets, visualise spending patterns, and gain insights into their financial habits.",B.GH,B.Hi,B.I3,B.GL,B.H7,!1)
+B.Gm=s([".NET MAUI","C#","SQLite","MVVM","Local Storage","Cross-platform"],t.s)
+B.FY=s(["Service queue management with real-time status tracking","Customer profile management with wash history and preferences","Multiple wash package configuration with pricing tiers","Offline-capable SQLite storage for uninterrupted operations","Staff scheduling and performance tracking dashboards","Revenue reporting with daily, weekly, and monthly breakdowns","Push notifications for service completion and promotional offers","Clean MVVM architecture ensuring maintainability and testability"],t.s)
+B.Fi=s(["Clean MVVM architecture with dependency injection","Offline-first SQLite storage for uninterrupted field operations","Queue management system with real-time status propagation","Revenue analytics engine with configurable time-period breakdowns","Push notification service for customer engagement"],t.s)
+B.Gr=s(["Designing a real-time queue management system that works reliably offline","Building configurable pricing tiers with dynamic wash package management","Implementing staff scheduling with performance tracking and conflict avoidance","Creating revenue reporting with accurate daily, weekly, and monthly aggregations","Ensuring push notifications are delivered reliably for service completion alerts"],t.s)
+B.Gg=s(["Complete car wash management mobile application","Service queue and customer management system","Staff scheduling and performance dashboards","Revenue analytics and reporting module","Offline-capable cross-platform app"],t.s)
+B.Mh=new A.cS("logicwash","LogicWash","Commercial Car Wash Management Solution","Logistics","A streamlined mobile solution for managing commercial car wash operations \u2014 handling service queues, customer management, wash tracking, and operational analytics.",B.Gm,B.FY,B.Fi,B.Gr,B.Gg,!1)
+B.GK=s(["Xamarin.Forms",".NET MAUI","C#","SQLite","SQL Server",".NET Core API","MVVM","REST APIs"],t.s)
+B.GC=s(["Patient registration and record management with search and filtering","Medicine inventory tracking with stock alerts and expiry management","Appointment scheduling with provider calendars and automated reminders","Migrated entire codebase from Xamarin.Forms to .NET MAUI","Improved startup time and memory efficiency via framework optimisation","REST API integration for secure, real-time backend communication","Resolved Android/iOS platform-specific UI and compatibility issues","Extensive testing, debugging, and production performance tuning"],t.s)
+B.Id=s(["Full codebase migration from Xamarin.Forms to .NET MAUI","Performance-optimised startup and memory management","Platform-specific renderers for Android/iOS compatibility","REST API layer with secure authentication and real-time sync","Inventory management module with alert-based triggers"],t.s)
+B.If=s(["Migrating a large production codebase from Xamarin.Forms to .NET MAUI without downtime","Optimising application startup time and memory usage on resource-constrained devices","Resolving platform-specific rendering issues across Android and iOS simultaneously","Building a reliable medicine inventory system with real-time stock alerts","Performance tuning for production-scale data with search and filtering"],t.s)
+B.Ik=s(["Complete hospital management mobile application","Successful Xamarin.Forms to .NET MAUI migration","Performance-optimised app with improved startup and memory usage","Patient records, inventory, and appointment management modules","Cross-platform compatibility across Android and iOS"],t.s)
+B.Mk=new A.cS("smd-mobile","SMD Mobile","Hospital & Clinic Management System","Healthcare","Comprehensive hospital and clinic management mobile application covering patient records, medicine inventory, appointment scheduling, and clinical workflow automation.",B.GK,B.GC,B.Id,B.If,B.Ik,!1)
+B.HJ=s(["Xamarin.Forms",".NET MAUI","C#","SQLite","SQL Server",".NET Core API","MVVM","Offline Sync"],t.s)
+B.HA=s(["Dynamic consent form builder with e-signature capture and PDF generation","Configurable medical questionnaires with conditional logic and branching","Complete medical history intake with allergies, medications, and conditions","Offline-first SQLite storage with intelligent background synchronisation","Migrated from Xamarin.Forms to .NET MAUI for long-term platform support","Barcode scanning for patient identification and record lookup","Multi-language support for diverse patient demographics","Seamless integration with backend .NET Core APIs and SQL Server"],t.s)
+B.HG=s(["Form engine with conditional logic, branching, and dynamic rendering","E-signature capture with PDF generation pipeline","Offline-first SQLite with conflict resolution and background sync","Migration architecture from Xamarin.Forms to .NET MAUI","Barcode scanning integration for patient identification","Localisation framework for multi-language support"],t.s)
+B.HR=s(["Designing a flexible form builder engine supporting conditional logic and branching paths","Migrating a production Xamarin.Forms app to .NET MAUI while maintaining feature parity","Implementing e-signature capture that produces legally valid PDF documents","Building reliable offline sync with conflict resolution for medical data","Supporting barcode scanning across diverse device hardware capabilities"],t.s)
+B.G5=s(["Digital patient intake system replacing paper workflows","Dynamic form builder with e-signature and PDF generation","Successfully migrated application from Xamarin.Forms to .NET MAUI","Offline-capable data layer with intelligent synchronisation","Multi-language patient-facing interface"],t.s)
+B.Mg=new A.cS("clipboard","Clipboard","Patient Intake & Clinical Workflow Management","Healthcare","Digital patient intake solution replacing paper-based processes \u2014 handling appointments, consent forms, questionnaires, and medical history management with seamless offline support.",B.HJ,B.HA,B.HG,B.HR,B.G5,!1)
+B.I1=s(["Xamarin.Forms","C#","ASP.NET Core API","SQL Server","HL7","HIPAA","MVVM","Push Notifications"],t.s)
+B.HW=s(["Built end-to-end appointment booking with provider availability and calendar sync","Implemented secure video consultation using WebRTC with encrypted streams","Developed real-time chat system with message history and push notifications","Integrated HL7/FHIR standards for healthcare data interoperability","Document upload/download with secure cloud storage and access control","HIPAA-compliant data handling with encryption at rest and in transit","Offline-first architecture with background sync for poor connectivity scenarios","Role-based access control separating patient, provider, and admin flows"],t.s)
+B.GR=s(["MVVM pattern with clean separation of concerns","Offline-first architecture with SQLite local cache and background synchronisation","WebRTC integration for peer-to-peer encrypted video streams","HL7/FHIR compliant data layer for healthcare interoperability","Role-based middleware for access control across patient, provider, and admin","Push notification service with real-time message delivery"],t.s)
+B.I8=s(["Ensuring HIPAA compliance across all data flows including video, chat, and document storage","Implementing reliable offline-first sync without data conflicts in a multi-user healthcare environment","Integrating WebRTC for video consultations with fallback mechanisms for unstable connections","Achieving HL7/FHIR interoperability with diverse hospital systems and EHR platforms","Managing encrypted data at rest and in transit while maintaining app performance"],t.s)
+B.HS=s(["Production-ready patient portal with appointment, video, chat, and document modules","HIPAA-compliant architecture documentation and security audit clearance","Offline-capable mobile app with intelligent background sync","HL7/FHIR integration layer for healthcare data exchange","Scalable push notification infrastructure"],t.s)
+B.Mj=new A.cS("healthx-patients","HealthxApp for Patients","Enterprise Healthcare Platform \u2013 Patient Portal","Healthcare","A comprehensive patient-facing mobile application enabling appointment scheduling, secure document management, HIPAA-compliant video consultations, and real-time chat with healthcare providers.",B.I1,B.HW,B.GR,B.I8,B.HS,!0)
+B.GQ=s(["Xamarin.Forms","C#","ASP.NET Core API","SQL Server","HL7","HIPAA","MVVM","WebRTC"],t.s)
+B.Gk=s(["Appointment management dashboard with schedule overview and conflict detection","Patient document review system with annotation and approval workflows","Video consultation initiation with recording capability for medical records","Secure messaging with read receipts, typing indicators, and file sharing","Integration with hospital EMR systems via HL7 interfaces","Multi-location support for providers practising across clinics","Analytics dashboard showing consultation metrics and patient engagement","Notification system for urgent patient requests and schedule changes"],t.s)
+B.HU=s(["Dashboard-centric UI with real-time data refresh","HL7 interface layer for EMR system integration","WebRTC with recording pipeline for medical consultation archival","Multi-location data partitioning for provider context switching","Analytics engine with aggregated metrics and engagement scoring"],t.s)
+B.HO=s(["Building a conflict detection system for multi-location appointment scheduling","Implementing video recording with HIPAA-compliant storage and retrieval","Integrating with multiple EMR systems each with different HL7 implementation versions","Designing an annotation system for medical documents with approval workflows","Real-time notification prioritisation for urgent vs routine patient communications"],t.s)
+B.G4=s(["Provider dashboard with appointment, document, and analytics modules","Video consultation system with recording and archival capability","HL7 integration adapters for hospital EMR connectivity","Multi-location provider management system","Real-time secure messaging platform with file sharing"],t.s)
+B.Ma=new A.cS("healthx-providers","HealthxApp for Providers","Enterprise Healthcare Platform \u2013 Provider Dashboard","Healthcare","Provider-facing companion application enabling doctors and clinical staff to manage appointments, review patient documents, conduct video consultations, and communicate securely with patients.",B.GQ,B.Gk,B.HU,B.HO,B.G4,!1)
+B.HQ=s(["Flutter","Dart","Provider","photo_manager","video_player","Cross-platform"],t.s)
+B.Ha=s(["Gallery view with grid (2/3/4 columns) or list layout, grouped by date","Folder browsing with media organized by albums/folders with cover thumbnails","Full-resolution image viewer with pinch-to-zoom using PhotoView","Native video player with play/pause and progress scrubbing","Share single or multiple media items via system share sheet","Delete media from device with confirmation dialog","Rename media files with platform-specific handling","Camera capture for taking photos or recording videos directly from the app","Theme support with System default, Light, and Dark themes with persistent preference","Settings for theme, grid column count, and grid/list layout preference","Timeline overlay scroll indicator showing date group while scrolling","Animated auto-hiding header on scroll down, reappearing on scroll up","Multi-select selection mode for batch delete or share operations","Floating pill-shaped bottom navigation bar (All / Folders / Settings)"],t.s)
+B.GB=s(["Provider-based state management with GalleryProvider","Service layer abstraction with MediaService and PreferencesService","photo_manager integration for device media access across platforms","Reusable widget architecture for thumbnails, dialogs, and navigation","Persistent user preferences with shared_preferences","Clean separation into models, services, providers, pages, and widgets"],t.s)
+B.Ic=s(["Efficiently loading and rendering thousands of media thumbnails without memory pressure","Implementing smooth pinch-to-zoom and gesture handling for full-resolution images","Cross-platform media permission handling for photo and video access","Building a responsive grid that adapts column count and layout mode dynamically","Porting .NET MAUI architecture patterns to Flutter with Provider state management"],t.s)
+B.HE=s(["Cross-platform gallery app with grid and list browsing modes","Full-resolution image viewer with zoom and video playback","Camera capture and media management (share, delete, rename)","Theme system with persistent user preferences","Batch operations with multi-select mode"],t.s)
+B.Mi=new A.cS("galleryhub","GalleryHub","Cross-Platform Smart Gallery & Media Manager","AI","A cross-platform gallery application built with Flutter \u2014 ported from .NET MAUI. Features a rich media browsing experience with grid/list layouts, folder organisation, full-resolution image viewing, native video playback, camera capture, and batch operations for managing device media.",B.HQ,B.Ha,B.GB,B.Ic,B.HE,!1)
+B.dh=s([B.Mc,B.Me,B.Md,B.Mb,B.Mf,B.Mh,B.Mk,B.Mg,B.Mj,B.Ma,B.Mi],t.gd)
 B.Ie=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
 B.Ih=s([B.jL,B.jM,B.jN,B.y,B.Y,B.ba,B.bm,B.cx,B.el],A.aq("x<eI>"))
 B.Ii=s([0.015176349177441876,0.045529047532325624,0.07588174588720938,0.10623444424209313,0.13658714259697685,0.16693984095186062,0.19729253930674434,0.2276452376616281,0.2579979360165119,0.28835063437139563,0.3188300904430532,0.350925934958123,0.3848314933096426,0.42057480301049466,0.458183274052838,0.4976837250274023,0.5391024159806381,0.5824650784040898,0.6277969426914107,0.6751227633498623,0.7244668422128921,0.775853049866786,0.829304845476233,0.8848452951698498,0.942497089126609,1.0022825574869039,1.0642236851973577,1.1283421258858297,1.1946592148522128,1.2631959812511864,1.3339731595349034,1.407011200216447,1.4823302800086415,1.5599503113873272,1.6398909516233677,1.7221716113234105,1.8068114625156377,1.8938294463134073,1.9832442801866852,2.075074464868551,2.1693382909216234,2.2660538449872063,2.36523901573795,2.4669114995532007,2.5710888059345764,2.6777882626779785,2.7870270208169257,2.898822059350997,3.0131901897720907,3.1301480604002863,3.2497121605402226,3.3718988244681087,3.4967242352587946,3.624204428461639,3.754355295633311,3.887192587735158,4.022731918402185,4.160988767090289,4.301978482107941,4.445716283538092,4.592217266055746,4.741496401646282,4.893568542229298,5.048448422192488,5.20615066083972,5.3666897647573375,5.5300801301023865,5.696336044816294,5.865471690767354,6.037501145825082,6.212438385869475,6.390297286737924,6.571091626112461,6.7548350853498045,6.941541251256611,7.131223617812143,7.323895587840543,7.5195704746346665,7.7182615035334345,7.919981813454504,8.124744458384042,8.332562408825165,8.543448553206703,8.757415699253682,8.974476575321063,9.194643831691977,9.417930041841839,9.644347703669503,9.873909240696694,10.106627003236781,10.342513269534024,10.58158024687427,10.8238400726681,11.069304815507364,11.317986476196008,11.569896988756009,11.825048221409341,12.083451977536606,12.345119996613247,12.610063955123938,12.878295467455942,13.149826086772048,13.42466730586372,13.702830557985108,13.984327217668513,14.269168601521828,14.55736596900856,14.848930523210871,15.143873411576273,15.44220572664832,15.743938506781891,16.04908273684337,16.35764934889634,16.66964922287304,16.985093187232053,17.30399201960269,17.62635644741625,17.95219714852476,18.281524751807332,18.614349837764564,18.95068293910138,19.290534541298456,19.633915083172692,19.98083495742689,20.331304511189067,20.685334046541502,21.042933821039977,21.404114048223256,21.76888489811322,22.137256497705877,22.50923893145328,22.884842241736916,23.264076429332462,23.6469514538663,24.033477234264016,24.42366364919083,24.817520537484558,25.21505769858089,25.61628489293138,26.021211842414342,26.429848230738664,26.842203703840827,27.258287870275353,27.678110301598522,28.10168053274597,28.529008062403893,28.96010235337422,29.39497283293396,29.83362889318845,30.276079891419332,30.722335150426627,31.172403958865512,31.62629557157785,32.08401920991837,32.54558406207592,33.010999283389665,33.4802739966603,33.953417292456834,34.430438229418264,34.911345834551085,35.39614910352207,35.88485700094671,36.37747846067349,36.87402238606382,37.37449765026789,37.87891309649659,38.38727753828926,38.89959975977785,39.41588851594697,39.93615253289054,40.460400508064545,40.98864111053629,41.520882981230194,42.05713473317016,42.597404951718396,43.141702194811224,43.6900349931913,44.24241185063697,44.798841244188324,45.35933162437017,45.92389141541209,46.49252901546552,47.065252796817916,47.64207110610409,48.22299226451468,48.808024568002054,49.3971762874833,49.9904556690408,50.587870934119984,51.189430279724725,51.79514187861014,52.40501387947288,53.0190544071392,53.637271562750364,54.259673423945976,54.88626804504493,55.517063457223934,56.15206766869424,56.79128866487574,57.43473440856916,58.08241284012621,58.734331877617365,59.39049941699807,60.05092333227251,60.715611475655585,61.38457167773311,62.057811747619894,62.7353394731159,63.417162620860914,64.10328893648692,64.79372614476921,65.48848194977529,66.18756403501224,66.89098006357258,67.59873767827808,68.31084450182222,69.02730813691093,69.74813616640164,70.47333615344107,71.20291564160104,71.93688215501312,72.67524319850172,73.41800625771542,74.16517879925733,74.9167682708136,75.67278210128072,76.43322770089146,77.1981124613393,77.96744375590167,78.74122893956174,79.51947534912904,80.30219030335869,81.08938110306934,81.88105503125999,82.67721935322541,83.4778813166706,84.28304815182372,85.09272707154808,85.90692527145302,86.72564993000343,87.54890820862819,88.3767072518277,89.2090541872801,90.04595612594655,90.88742016217518,91.73345337380438,92.58406282226491,93.43925555268066,94.29903859396902,95.16341895893969,96.03240364439274,96.9059996312159,97.78421388448044,98.6670533535366,99.55452497210776],t.n)
@@ -84449,12 +84449,12 @@ B.OM=new A.a3(B.aE,!1,!0,!0,!1,B.m)
 B.OC=new A.a3(B.aE,!1,!1,!0,!1,B.m)
 B.tE=new A.dn([B.OH,B.n,B.Od,B.n,B.yd,B.n,B.ya,B.n,B.Oy,B.n,B.Op,B.n,B.OM,B.n,B.OC,B.n],t.Fp)
 B.KB={Mobile:0,Backend:1,AI:2,Database:3,Cloud:4}
-B.Gl=s([".NET MAUI","Xamarin.Forms","Flutter","Dart","C#","MVVM"],t.s)
-B.GG=s(["ASP.NET Core","FastAPI","REST APIs","Entity Framework","Python",".NET Core API","ASP.NET Core API"],t.s)
-B.Ha=s(["Ollama","LLM Integration","AI Pipelines","Computer Vision","AI","OCR"],t.s)
-B.I7=s(["SQL Server","Supabase","SQLite"],t.s)
-B.GZ=s(["Azure","Serverless","Real-time DB","Realtime"],t.s)
-B.JY=new A.bD(B.KB,[B.Gl,B.GG,B.Ha,B.I7,B.GZ],t.VJ)
+B.Gj=s([".NET MAUI","Xamarin.Forms","Flutter","Dart","C#","MVVM"],t.s)
+B.GD=s(["ASP.NET Core","FastAPI","REST APIs","Entity Framework","Python",".NET Core API","ASP.NET Core API"],t.s)
+B.H6=s(["Ollama","LLM Integration","AI Pipelines","Computer Vision","AI","OCR"],t.s)
+B.I6=s(["SQL Server","Supabase","SQLite"],t.s)
+B.GW=s(["Azure","Serverless","Real-time DB","Realtime"],t.s)
+B.JY=new A.bD(B.KB,[B.Gj,B.GD,B.H6,B.I6,B.GW],t.VJ)
 B.KG={type:0}
 B.JZ=new A.bD(B.KG,["line"],t.li)
 B.tI=new A.bD(B.bd,[],A.aq("bD<F,tS>"))
@@ -84465,72 +84465,72 @@ B.k9=new A.bD(B.bd,[],A.aq("bD<w,@>"))
 B.tJ=new A.bD(B.bd,[],A.aq("bD<zV,@>"))
 B.K_=new A.bD(B.bd,[],A.aq("bD<fL,cu>"))
 B.tG=new A.bD(B.bd,[],A.aq("bD<fL,nH<cu>>"))
-B.FA=s([42,null,null,8589935146],t.Z)
-B.FB=s([43,null,null,8589935147],t.Z)
-B.FC=s([45,null,null,8589935149],t.Z)
-B.FD=s([46,null,null,8589935150],t.Z)
-B.FE=s([47,null,null,8589935151],t.Z)
-B.FF=s([48,null,null,8589935152],t.Z)
-B.FG=s([49,null,null,8589935153],t.Z)
-B.FJ=s([50,null,null,8589935154],t.Z)
-B.FL=s([51,null,null,8589935155],t.Z)
-B.FM=s([52,null,null,8589935156],t.Z)
-B.FN=s([53,null,null,8589935157],t.Z)
-B.FO=s([54,null,null,8589935158],t.Z)
-B.FP=s([55,null,null,8589935159],t.Z)
-B.FQ=s([56,null,null,8589935160],t.Z)
-B.FS=s([57,null,null,8589935161],t.Z)
-B.GV=s([8589934852,8589934852,8589934853,null],t.Z)
-B.Fp=s([4294967555,null,4294967555,null],t.Z)
-B.Fq=s([4294968065,null,null,8589935154],t.Z)
-B.Fr=s([4294968066,null,null,8589935156],t.Z)
-B.Fs=s([4294968067,null,null,8589935158],t.Z)
-B.Ft=s([4294968068,null,null,8589935160],t.Z)
-B.Fy=s([4294968321,null,null,8589935157],t.Z)
-B.GW=s([8589934848,8589934848,8589934849,null],t.Z)
-B.Fo=s([4294967423,null,null,8589935150],t.Z)
-B.Fu=s([4294968069,null,null,8589935153],t.Z)
-B.Fn=s([4294967309,null,null,8589935117],t.Z)
-B.Fv=s([4294968070,null,null,8589935159],t.Z)
-B.Fz=s([4294968327,null,null,8589935152],t.Z)
-B.GX=s([8589934854,8589934854,8589934855,null],t.Z)
-B.Fw=s([4294968071,null,null,8589935155],t.Z)
-B.Fx=s([4294968072,null,null,8589935161],t.Z)
-B.GY=s([8589934850,8589934850,8589934851,null],t.Z)
-B.tK=new A.dn(["*",B.FA,"+",B.FB,"-",B.FC,".",B.FD,"/",B.FE,"0",B.FF,"1",B.FG,"2",B.FJ,"3",B.FL,"4",B.FM,"5",B.FN,"6",B.FO,"7",B.FP,"8",B.FQ,"9",B.FS,"Alt",B.GV,"AltGraph",B.Fp,"ArrowDown",B.Fq,"ArrowLeft",B.Fr,"ArrowRight",B.Fs,"ArrowUp",B.Ft,"Clear",B.Fy,"Control",B.GW,"Delete",B.Fo,"End",B.Fu,"Enter",B.Fn,"Home",B.Fv,"Insert",B.Fz,"Meta",B.GX,"PageDown",B.Fw,"PageUp",B.Fx,"Shift",B.GY],A.aq("dn<w,T<n?>>"))
-B.FR=s([B.nR,null,null,B.tx],t.L)
-B.HC=s([B.tj,null,null,B.ty],t.L)
-B.Gp=s([B.tk,null,null,B.tz],t.L)
-B.H_=s([B.tl,null,null,B.cE],t.L)
+B.Fz=s([42,null,null,8589935146],t.Z)
+B.FA=s([43,null,null,8589935147],t.Z)
+B.FB=s([45,null,null,8589935149],t.Z)
+B.FC=s([46,null,null,8589935150],t.Z)
+B.FD=s([47,null,null,8589935151],t.Z)
+B.FE=s([48,null,null,8589935152],t.Z)
+B.FF=s([49,null,null,8589935153],t.Z)
+B.FI=s([50,null,null,8589935154],t.Z)
+B.FK=s([51,null,null,8589935155],t.Z)
+B.FL=s([52,null,null,8589935156],t.Z)
+B.FM=s([53,null,null,8589935157],t.Z)
+B.FN=s([54,null,null,8589935158],t.Z)
+B.FO=s([55,null,null,8589935159],t.Z)
+B.FP=s([56,null,null,8589935160],t.Z)
+B.FR=s([57,null,null,8589935161],t.Z)
+B.GS=s([8589934852,8589934852,8589934853,null],t.Z)
+B.Fo=s([4294967555,null,4294967555,null],t.Z)
+B.Fp=s([4294968065,null,null,8589935154],t.Z)
+B.Fq=s([4294968066,null,null,8589935156],t.Z)
+B.Fr=s([4294968067,null,null,8589935158],t.Z)
+B.Fs=s([4294968068,null,null,8589935160],t.Z)
+B.Fx=s([4294968321,null,null,8589935157],t.Z)
+B.GT=s([8589934848,8589934848,8589934849,null],t.Z)
+B.Fn=s([4294967423,null,null,8589935150],t.Z)
+B.Ft=s([4294968069,null,null,8589935153],t.Z)
+B.Fm=s([4294967309,null,null,8589935117],t.Z)
+B.Fu=s([4294968070,null,null,8589935159],t.Z)
+B.Fy=s([4294968327,null,null,8589935152],t.Z)
+B.GU=s([8589934854,8589934854,8589934855,null],t.Z)
+B.Fv=s([4294968071,null,null,8589935155],t.Z)
+B.Fw=s([4294968072,null,null,8589935161],t.Z)
+B.GV=s([8589934850,8589934850,8589934851,null],t.Z)
+B.tK=new A.dn(["*",B.Fz,"+",B.FA,"-",B.FB,".",B.FC,"/",B.FD,"0",B.FE,"1",B.FF,"2",B.FI,"3",B.FK,"4",B.FL,"5",B.FM,"6",B.FN,"7",B.FO,"8",B.FP,"9",B.FR,"Alt",B.GS,"AltGraph",B.Fo,"ArrowDown",B.Fp,"ArrowLeft",B.Fq,"ArrowRight",B.Fr,"ArrowUp",B.Fs,"Clear",B.Fx,"Control",B.GT,"Delete",B.Fn,"End",B.Ft,"Enter",B.Fm,"Home",B.Fu,"Insert",B.Fy,"Meta",B.GU,"PageDown",B.Fv,"PageUp",B.Fw,"Shift",B.GV],A.aq("dn<w,T<n?>>"))
+B.FQ=s([B.nR,null,null,B.tx],t.L)
+B.Hz=s([B.tj,null,null,B.ty],t.L)
+B.Gn=s([B.tk,null,null,B.tz],t.L)
+B.GX=s([B.tl,null,null,B.cE],t.L)
 B.Ff=s([B.tm,null,null,B.tA],t.L)
-B.HY=s([B.tn,null,null,B.k4],t.L)
-B.HP=s([B.to,null,null,B.eB],t.L)
-B.FX=s([B.tp,null,null,B.cF],t.L)
-B.Ia=s([B.tq,null,null,B.eC],t.L)
-B.HO=s([B.tr,null,null,B.cG],t.L)
-B.FV=s([B.ts,null,null,B.k5],t.L)
+B.HX=s([B.tn,null,null,B.k4],t.L)
+B.HN=s([B.to,null,null,B.eB],t.L)
+B.FW=s([B.tp,null,null,B.cF],t.L)
+B.I9=s([B.tq,null,null,B.eC],t.L)
+B.HM=s([B.tr,null,null,B.cG],t.L)
+B.FU=s([B.ts,null,null,B.k5],t.L)
 B.Fk=s([B.tt,null,null,B.cH],t.L)
-B.Ga=s([B.tu,null,null,B.eD],t.L)
-B.HE=s([B.tv,null,null,B.cI],t.L)
-B.HH=s([B.tw,null,null,B.eE],t.L)
-B.G0=s([B.ez,B.ez,B.h7,null],t.L)
-B.HZ=s([B.h3,null,B.h3,null],t.L)
-B.Gz=s([B.bz,null,null,B.cF],t.L)
-B.GA=s([B.bn,null,null,B.cG],t.L)
-B.GB=s([B.bo,null,null,B.cH],t.L)
-B.I5=s([B.bA,null,null,B.cI],t.L)
-B.HM=s([B.jZ,null,null,B.k5],t.L)
-B.G1=s([B.ey,B.ey,B.h6,null],t.L)
-B.Hf=s([B.aE,null,null,B.cE],t.L)
-B.GC=s([B.cB,null,null,B.eB],t.L)
-B.FU=s([B.h2,null,null,B.k3],t.L)
-B.GD=s([B.cC,null,null,B.eD],t.L)
-B.HN=s([B.ex,null,null,B.k4],t.L)
-B.G2=s([B.eA,B.eA,B.h8,null],t.L)
-B.GE=s([B.ev,null,null,B.eC],t.L)
-B.Hm=s([B.ew,null,null,B.eE],t.L)
-B.G3=s([B.cc,B.cc,B.cD,null],t.L)
-B.K1=new A.dn(["*",B.FR,"+",B.HC,"-",B.Gp,".",B.H_,"/",B.Ff,"0",B.HY,"1",B.HP,"2",B.FX,"3",B.Ia,"4",B.HO,"5",B.FV,"6",B.Fk,"7",B.Ga,"8",B.HE,"9",B.HH,"Alt",B.G0,"AltGraph",B.HZ,"ArrowDown",B.Gz,"ArrowLeft",B.GA,"ArrowRight",B.GB,"ArrowUp",B.I5,"Clear",B.HM,"Control",B.G1,"Delete",B.Hf,"End",B.GC,"Enter",B.FU,"Home",B.GD,"Insert",B.HN,"Meta",B.G2,"PageDown",B.GE,"PageUp",B.Hm,"Shift",B.G3],A.aq("dn<w,T<e?>>"))
+B.G9=s([B.tu,null,null,B.eD],t.L)
+B.HB=s([B.tv,null,null,B.cI],t.L)
+B.HF=s([B.tw,null,null,B.eE],t.L)
+B.G_=s([B.ez,B.ez,B.h7,null],t.L)
+B.HY=s([B.h3,null,B.h3,null],t.L)
+B.Gv=s([B.bz,null,null,B.cF],t.L)
+B.Gw=s([B.bn,null,null,B.cG],t.L)
+B.Gx=s([B.bo,null,null,B.cH],t.L)
+B.I4=s([B.bA,null,null,B.cI],t.L)
+B.HK=s([B.jZ,null,null,B.k5],t.L)
+B.G0=s([B.ey,B.ey,B.h6,null],t.L)
+B.Hc=s([B.aE,null,null,B.cE],t.L)
+B.Gy=s([B.cB,null,null,B.eB],t.L)
+B.FT=s([B.h2,null,null,B.k3],t.L)
+B.Gz=s([B.cC,null,null,B.eD],t.L)
+B.HL=s([B.ex,null,null,B.k4],t.L)
+B.G1=s([B.eA,B.eA,B.h8,null],t.L)
+B.GA=s([B.ev,null,null,B.eC],t.L)
+B.Hj=s([B.ew,null,null,B.eE],t.L)
+B.G2=s([B.cc,B.cc,B.cD,null],t.L)
+B.K1=new A.dn(["*",B.FQ,"+",B.Hz,"-",B.Gn,".",B.GX,"/",B.Ff,"0",B.HX,"1",B.HN,"2",B.FW,"3",B.I9,"4",B.HM,"5",B.FU,"6",B.Fk,"7",B.G9,"8",B.HB,"9",B.HF,"Alt",B.G_,"AltGraph",B.HY,"ArrowDown",B.Gv,"ArrowLeft",B.Gw,"ArrowRight",B.Gx,"ArrowUp",B.I4,"Clear",B.HK,"Control",B.G0,"Delete",B.Hc,"End",B.Gy,"Enter",B.FT,"Home",B.Gz,"Insert",B.HL,"Meta",B.G1,"PageDown",B.GA,"PageUp",B.Hj,"Shift",B.G2],A.aq("dn<w,T<e?>>"))
 B.KA={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.tL=new A.bD(B.KA,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.Kw={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -84993,12 +84993,12 @@ B.np=new A.jR(B.Es,12,B.cu,null,null)
 B.yA=new A.bE(4,null,null,null)
 B.RV=new A.t(!0,B.cu,null,null,null,null,11,B.ba,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ty=new A.i8("Featured",null,B.RV,null,null,null,null,null,null)
-B.I3=s([B.np,B.yA,B.Ty],t.p)
-B.N_=new A.rI(B.ao,B.r,B.bS,B.K,null,B.cT,null,0,B.I3,null)
+B.I2=s([B.np,B.yA,B.Ty],t.p)
+B.N_=new A.rI(B.ao,B.r,B.bS,B.K,null,B.cT,null,0,B.I2,null)
 B.Qy=new A.t(!0,B.cu,null,null,null,null,12,B.ba,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Tw=new A.i8("Featured",null,B.Qy,null,null,null,null,null,null)
-B.Gw=s([B.np,B.yA,B.Tw],t.p)
-B.N0=new A.rI(B.ao,B.r,B.bS,B.K,null,B.cT,null,0,B.Gw,null)
+B.Gt=s([B.np,B.yA,B.Tw],t.p)
+B.N0=new A.rI(B.ao,B.r,B.bS,B.K,null,B.cT,null,0,B.Gt,null)
 B.N1=new A.Kj(null,null)
 B.cN=new A.oR(0,"idle")
 B.xI=new A.oR(1,"transientCallbacks")
@@ -85123,9 +85123,9 @@ B.NX=new A.dQ([B.NF,B.NE],A.aq("dQ<kl>"))
 B.y8=new A.dQ([B.ai,B.aF,B.bE,B.aN,B.b2],t.Lu)
 B.Cg=new A.D(0.23529411764705882,0,0,0,B.f)
 B.Ac=new A.dj(0.5,B.cZ,B.Cg,B.tS,10)
-B.Hg=s([B.Ac],t.sq)
+B.Hd=s([B.Ac],t.sq)
 B.MZ=new A.j3(B.lz,B.p)
-B.NY=new A.i3(null,null,null,B.Hg,B.MZ)
+B.NY=new A.i3(null,null,null,B.Hd,B.MZ)
 B.NZ=new A.a3(B.ex,!1,!0,!1,!1,B.m)
 B.y9=new A.a3(B.jX,!1,!1,!1,!0,B.m)
 B.O_=new A.a3(B.nM,!0,!1,!1,!1,B.m)
@@ -86000,7 +86000,7 @@ return A.c([A.y(A.y(A.a9(),q),"Baseline"),A.y(A.y(A.a9(),q),"AboveBaseline"),A.y
 r($,"aP8","azq",()=>A.cV().gS1()+"roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2")
 r($,"aOz","az0",()=>A.aHz(A.EJ(A.EJ(A.kV(),"window"),"FinalizationRegistry"),A.jm(new A.alC())))
 r($,"aPT","azT",()=>new A.a5_())
-s($,"aOG","az4",()=>A.aDc(B.GH))
+s($,"aOG","az4",()=>A.aDc(B.GE))
 s($,"aOF","an0",()=>A.a24(A.aAG($.az4())))
 s($,"aLP","cH",()=>{var q,p=A.y(A.y(A.kV(),"window"),"screen")
 p=p==null?null:A.y(p,"width")
