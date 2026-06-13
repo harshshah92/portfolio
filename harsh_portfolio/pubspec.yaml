@@ -1,0 +1,25 @@
+name: harsh_portfolio
+description: Premium Portfolio - Senior Mobile & Full Stack Engineer
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  url_launcher: ^6.3.1
+  flutter_animate: ^4.5.2
+  visibility_detector: ^0.4.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/

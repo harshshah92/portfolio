@@ -1,0 +1,229 @@
+================================================================================
+PROJECTS FOR NAUKRI & LINKEDIN - HARSH SHAH
+Senior Mobile & Full Stack Engineer
+================================================================================
+
+
+================================================================================
+PROJECT 1: HealthxApp for Patients
+================================================================================
+
+Title: HealthxApp for Patients – Enterprise Healthcare Platform (Patient Portal)
+
+Description:
+Built a comprehensive patient-facing mobile application enabling appointment scheduling, secure document management, HIPAA-compliant video consultations, and real-time chat with healthcare providers.
+
+Key Contributions:
+• Developed end-to-end appointment booking with provider availability and calendar sync
+• Implemented secure video consultation using WebRTC with encrypted streams
+• Built real-time chat system with message history and push notifications
+• Integrated HL7/FHIR standards for healthcare data interoperability
+• Designed document upload/download with secure cloud storage and access control
+• Ensured HIPAA-compliant data handling with encryption at rest and in transit
+• Architected offline-first approach with background sync for poor connectivity scenarios
+• Implemented role-based access control separating patient, provider, and admin flows
+
+Tech Stack: Xamarin.Forms, C#, ASP.NET Core API, SQL Server, HL7, HIPAA, MVVM, Push Notifications
+
+
+================================================================================
+PROJECT 2: HealthxApp for Providers
+================================================================================
+
+Title: HealthxApp for Providers – Enterprise Healthcare Platform (Provider Dashboard)
+
+Description:
+Developed a provider-facing companion application enabling doctors and clinical staff to manage appointments, review patient documents, conduct video consultations, and communicate securely with patients.
+
+Key Contributions:
+• Built appointment management dashboard with schedule overview and conflict detection
+• Designed patient document review system with annotation and approval workflows
+• Implemented video consultation initiation with recording capability for medical records
+• Developed secure messaging with read receipts, typing indicators, and file sharing
+• Integrated with hospital EMR systems via HL7 interfaces
+• Added multi-location support for providers practising across clinics
+• Created analytics dashboard showing consultation metrics and patient engagement
+• Built notification system for urgent patient requests and schedule changes
+
+Tech Stack: Xamarin.Forms, C#, ASP.NET Core API, SQL Server, HL7, HIPAA, MVVM, WebRTC
+
+
+================================================================================
+PROJECT 3: Clipboard
+================================================================================
+
+Title: Clipboard – Patient Intake & Clinical Workflow Management
+
+Description:
+Built a digital patient intake solution replacing paper-based processes — handling appointments, consent forms, questionnaires, and medical history management with seamless offline support.
+
+Key Contributions:
+• Created dynamic consent form builder with e-signature capture and PDF generation
+• Developed configurable medical questionnaires with conditional logic and branching
+• Built complete medical history intake with allergies, medications, and conditions
+• Implemented offline-first SQLite storage with intelligent background synchronisation
+• Migrated from Xamarin.Forms to .NET MAUI for long-term platform support
+• Integrated barcode scanning for patient identification and record lookup
+• Added multi-language support for diverse patient demographics
+• Ensured seamless integration with backend .NET Core APIs and SQL Server
+
+Tech Stack: Xamarin.Forms, .NET MAUI, C#, SQLite, SQL Server, .NET Core API, MVVM, Offline Sync
+
+
+================================================================================
+PROJECT 4: SMD Mobile
+================================================================================
+
+Title: SMD Mobile – Hospital & Clinic Management System
+
+Description:
+Developed a comprehensive hospital and clinic management mobile application covering patient records, medicine inventory, appointment scheduling, and clinical workflow automation.
+
+Key Contributions:
+• Built patient registration and record management with search and filtering
+• Developed medicine inventory tracking with stock alerts and expiry management
+• Implemented appointment scheduling with provider calendars and automated reminders
+• Migrated entire codebase from Xamarin.Forms to .NET MAUI
+• Improved startup time and memory efficiency via framework optimisation
+• Built REST API integration for secure, real-time backend communication
+• Resolved Android/iOS platform-specific UI and compatibility issues
+• Performed extensive testing, debugging, and production performance tuning
+
+Tech Stack: Xamarin.Forms, .NET MAUI, C#, SQLite, SQL Server, .NET Core API, MVVM, REST APIs
+
+
+================================================================================
+PROJECT 5: LogicWash
+================================================================================
+
+Title: LogicWash – Commercial Car Wash Management Solution
+
+Description:
+Built a streamlined mobile solution for managing commercial car wash operations — handling service queues, customer management, wash tracking, and operational analytics.
+
+Key Contributions:
+• Developed service queue management with real-time status tracking
+• Built customer profile management with wash history and preferences
+• Configured multiple wash packages with pricing tiers
+• Implemented offline-capable SQLite storage for uninterrupted operations
+• Created staff scheduling and performance tracking dashboards
+• Built revenue reporting with daily, weekly, and monthly breakdowns
+• Integrated push notifications for service completion and promotional offers
+• Designed clean MVVM architecture ensuring maintainability and testability
+
+Tech Stack: .NET MAUI, C#, SQLite, MVVM, Local Storage, Cross-platform
+
+
+================================================================================
+PROJECT 6: Digital Butler
+================================================================================
+
+Title: Digital Butler – AI-Powered Hotel & Resort Guest Management Platform
+
+Description:
+Architected an intelligent hospitality platform leveraging AI to provide personalised guest experiences — from smart room booking and concierge services to AI-driven recommendations and guest communication.
+
+Key Contributions:
+• Built AI-powered concierge chatbot using Ollama LLM for natural guest interactions
+• Developed smart room booking with dynamic pricing and availability optimisation
+• Created guest preference learning system for personalised service recommendations
+• Implemented real-time communication between guests and hotel staff via chat
+• Integrated with hotel PMS for room status, housekeeping, and maintenance
+• Added multi-property support with centralised management dashboard
+• Used Supabase real-time database for instant updates across all clients
+• Built Python FastAPI backend with AI pipeline orchestration
+
+Tech Stack: Flutter, Dart, Supabase, Python, FastAPI, AI, Ollama, Real-time DB, Cross-platform
+
+
+================================================================================
+PROJECT 7: SmartLogix
+================================================================================
+
+Title: SmartLogix – AI-Powered Shipment & Logistics Tracking Platform
+
+Description:
+Developed an intelligent logistics platform that uses AI for shipment registration, route optimisation, delivery prediction, and real-time tracking — transforming traditional shipping workflows.
+
+Key Contributions:
+• Built AI-driven shipment registration with automatic data extraction from documents
+• Implemented real-time GPS tracking with estimated delivery time predictions
+• Developed route optimisation engine using ML models for cost and time efficiency
+• Created automated status updates with intelligent notification triggers
+• Integrated document scanning and OCR for bills of lading and shipping labels
+• Built analytics dashboard with shipment performance metrics and trends
+• Added multi-carrier integration with unified tracking interface
+• Used Supabase real-time sync for instant status propagation
+
+Tech Stack: Flutter, Dart, Supabase, Python, FastAPI, AI, Ollama, OCR, Real-time Tracking
+
+
+================================================================================
+PROJECT 8: ReconVision
+================================================================================
+
+Title: ReconVision – AI Platform for Crime & Anomaly Detection
+
+Description:
+Built an advanced AI-powered surveillance and analytics platform combining computer vision for crime detection, facial recognition, violence detection, and behavioural analytics in real-time video feeds.
+
+Key Contributions:
+• Implemented real-time video feed analysis with computer vision models for anomaly detection
+• Built face detection and recognition with configurable alert thresholds
+• Developed violence and aggressive behaviour detection using trained ML models
+• Created analytics dashboard with heat maps, incident timelines, and trend analysis
+• Added multi-camera support with centralised monitoring interface
+• Designed alert system with configurable escalation workflows
+• Built historical incident search with video playback and evidence export
+• Developed Python AI pipeline with Ollama integration for contextual analysis
+
+Tech Stack: Flutter, Dart, Supabase, Python, FastAPI, AI, Ollama, Computer Vision, Analytics
+
+
+================================================================================
+PROJECT 9: Pinglet
+================================================================================
+
+Title: Pinglet – Real-Time Chat Application
+
+Description:
+Developed a modern, performant real-time messaging application with instant message delivery, presence indicators, media sharing, and group conversation support.
+
+Key Contributions:
+• Built real-time messaging with sub-second delivery using Supabase Realtime
+• Implemented online/offline presence indicators with last-seen timestamps
+• Developed media sharing including images, documents, and voice messages
+• Created group chat creation and management with admin controls
+• Added message read receipts and typing indicators
+• Integrated push notifications for background message delivery
+• Built end-to-end message history with search functionality
+• Designed clean Material Design UI with smooth animations
+
+Tech Stack: Flutter, Dart, Supabase, Realtime, Push Notifications, Cross-platform
+
+
+================================================================================
+PROJECT 10: Finance App
+================================================================================
+
+Title: Finance App – Personal Finance & Expense Tracking
+
+Description:
+Built a personal finance management application enabling users to track expenses, set budgets, visualise spending patterns, and gain insights into their financial habits.
+
+Key Contributions:
+• Developed expense recording with category tagging and receipt photo capture
+• Created budget system with configurable limits and overspend alerts
+• Built interactive charts and graphs for spending pattern visualisation
+• Designed monthly and yearly financial summaries with export capability
+• Implemented recurring expense tracking with automatic categorisation
+• Added multi-currency support with real-time conversion rates
+• Integrated secure authentication with biometric login support
+• Used cloud sync via Supabase for multi-device access
+
+Tech Stack: Flutter, Dart, Supabase, Charts, Cross-platform, Biometric Auth
+
+
+================================================================================
+END OF PROJECTS
+================================================================================
