@@ -78475,7 +78475,7 @@ A.afy.prototype={
 $0(){return A.k1(this.a,"/projects",t.X)},
 $S:0}
 A.afz.prototype={
-$0(){A.amA(A.ho("assets/Harsh_Portfolio.pdf",0,null))
+$0(){A.amA(A.ho("assets/assets/Harsh_Portfolio.pdf",0,null))
 return null},
 $S:0}
 A.tR.prototype={
@@ -78656,7 +78656,7 @@ p=A.bh("Get the complete portfolio document with all project details",s,s,s,j==n
 o=A.aBS(s,s,o,s,s,s,s,s,s,B.k,s,s,B.mK,s,new A.cw(A.c_(10),B.p),s,s,s,s,s)
 return A.bL(s,A.ck(A.c([k,B.cf,i,B.hR,p,B.OY,new A.H6(!0,new A.aep(),s,s,s,o,B.o,s,!1,s,!0,s,new A.Oi(B.Tr,B.Ez,o,s,s),s)],t.p),B.K,B.r,B.v),B.o,s,s,new A.bA(s,s,l,m,s,new A.r2(B.im,B.ls,B.dG,n,s,s),B.L),s,s,new A.ak(q,40,q,40),B.mM,s,s,1/0)}}
 A.aep.prototype={
-$0(){A.amA(A.ho("assets/Harsh_Portfolio.pdf",0,null))},
+$0(){A.amA(A.ho("assets/assets/Harsh_Portfolio.pdf",0,null))},
 $S:0}
 A.yl.prototype={
 aj(){return new A.QS(A.rL())}}
