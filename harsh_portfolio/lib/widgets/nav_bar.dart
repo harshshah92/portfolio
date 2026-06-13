@@ -33,13 +33,27 @@ class AppNavBar extends StatelessWidget {
         children: [
           GestureDetector(
             onTap: () => Navigator.pushNamed(context, '/'),
-            child: Text(
-              'HARSH',
-              style: theme.textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.w800,
-                letterSpacing: 2,
-                color: theme.colorScheme.primary,
-              ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(6),
+                  child: Image.asset(
+                    'assets/icon.png',
+                    width: 28,
+                    height: 28,
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'HARSH',
+                  style: theme.textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 2,
+                    color: theme.colorScheme.primary,
+                  ),
+                ),
+              ],
             ),
           ),
           Row(
