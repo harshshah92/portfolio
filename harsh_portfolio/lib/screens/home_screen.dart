@@ -217,7 +217,7 @@ class _StatsSection extends StatelessWidget {
 
     final stats = [
       {'value': '9+', 'label': 'Years Experience'},
-      {'value': '10+', 'label': 'Projects Delivered'},
+      {'value': '11+', 'label': 'Projects Delivered'},
       {'value': '5', 'label': 'Platforms'},
       {'value': '3+', 'label': 'AI Projects'},
     ];

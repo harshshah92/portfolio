@@ -506,6 +506,55 @@ class ProjectData {
       ],
       isFeatured: false,
     ),
+    ProjectModel(
+      id: 'galleryhub',
+      title: 'GalleryHub',
+      subtitle: 'Smart Device Gallery & Media Viewer',
+      domain: 'AI',
+      overview:
+          'A .NET MAUI mobile gallery application that reads images and videos from the device, renders thumbnails for fast browsing, and opens selected media in a full-screen viewer with native video playback controls. Built with cross-platform support for Android and iOS.',
+      techStack: [
+        '.NET MAUI',
+        'C#',
+        'MVVM',
+        'Cross-platform',
+        'Android',
+        'iOS',
+      ],
+      features: [
+        'Read local device images and videos with permission handling',
+        'Thumbnail grid for fast browsing of large media libraries',
+        'Full-screen image viewing with pinch-to-zoom and swipe gestures',
+        'Video playback with native controls for seamless media consumption',
+        'Android and iOS device build support with platform-specific optimisations',
+        'Efficient memory management for handling large media collections',
+        'Responsive grid layout adapting to device screen sizes',
+        'Native file system access for reading device storage',
+      ],
+      architectureHighlights: [
+        '.NET MAUI cross-platform architecture targeting Android and iOS',
+        'MVVM pattern for clean separation of UI and business logic',
+        'Platform-specific media access APIs with unified abstraction layer',
+        'Thumbnail caching strategy for performant grid rendering',
+        'Native video player integration with platform controls',
+        'Memory-efficient image loading with lazy thumbnail generation',
+      ],
+      technicalChallenges: [
+        'Handling runtime permissions for media access across Android 12+ and iOS 15+',
+        'Efficient thumbnail generation without blocking the UI thread on large galleries',
+        'Managing memory pressure when loading hundreds of high-resolution images',
+        'Cross-platform video playback with consistent native controls on both platforms',
+        'Optimising grid scroll performance with virtualized lists and image recycling',
+      ],
+      keyDeliverables: [
+        'Cross-platform gallery app for Android and iOS',
+        'Fast thumbnail grid with lazy loading',
+        'Full-screen image viewer with gesture support',
+        'Native video playback integration',
+        'Production builds for both Android and iOS devices',
+      ],
+      isFeatured: false,
+    ),
   ];
 
   static List<String> get allDomains =>
