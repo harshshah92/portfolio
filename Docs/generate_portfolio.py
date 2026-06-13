@@ -60,7 +60,7 @@ class SkillBar(Flowable):
 
 
 def build_pdf():
-    output_path = "/Users/harshshah92/Documents/HarshShah_Portfolio/Harsh_Portfolio.pdf"
+    output_path = "/Users/harshshah92/Documents/GitHub/HarshShah_Portfolio/Docs/Harsh_Portfolio_20260614.pdf"
     
     doc = SimpleDocTemplate(
         output_path,
@@ -115,7 +115,7 @@ def build_pdf():
 
     # Stats row
     stats_data = [
-        [Paragraph("9+", stats_style), Paragraph("10+", stats_style), Paragraph("5", stats_style), Paragraph("3+", stats_style)],
+        [Paragraph("9+", stats_style), Paragraph("11+", stats_style), Paragraph("5", stats_style), Paragraph("3+", stats_style)],
         [Paragraph("Years Experience", stats_label), Paragraph("Projects Delivered", stats_label), Paragraph("Platforms", stats_label), Paragraph("AI Projects", stats_label)],
     ]
     stats_table = Table(stats_data, colWidths=[(WIDTH-30*mm)/4]*4, rowHeights=[14*mm, 8*mm])
@@ -181,7 +181,7 @@ def build_pdf():
     elements.append(PageBreak())
     elements.append(ColorBar(WIDTH - 30*mm, 3, GOLD))
     elements.append(Spacer(1, 4*mm))
-    elements.append(Paragraph("PROJECT PORTFOLIO (10 Projects)", section_style))
+    elements.append(Paragraph("PROJECT PORTFOLIO (11 Projects)", section_style))
     elements.append(Paragraph(
         "A curated collection of production applications spanning healthcare, AI, hospitality, logistics, and finance — "
         "demonstrating depth in mobile engineering, backend architecture, and AI integration.",
@@ -359,6 +359,25 @@ def build_pdf():
                 "Cloud sync via Supabase for multi-device access",
             ],
             "tech": "Flutter · Dart · Supabase · Charts · Cross-platform · Biometric Auth",
+        },
+        {
+            "num": 11,
+            "title": "GalleryHub",
+            "subtitle": "Cross-Platform Smart Gallery & Media Manager",
+            "desc": "A cross-platform gallery application built with Flutter — ported from .NET MAUI. Features rich media browsing with grid/list layouts, folder organisation, full-resolution image viewing, native video playback, camera capture, and batch operations.",
+            "bullets": [
+                "Gallery view with grid (2/3/4 columns) or list layout, grouped by date",
+                "Folder browsing with media organized by albums with cover thumbnails",
+                "Full-resolution image viewer with pinch-to-zoom using PhotoView",
+                "Native video player with play/pause and progress scrubbing",
+                "Share single or multiple media items via system share sheet",
+                "Delete and rename media files with platform-specific handling",
+                "Camera capture for photos and videos directly from the app",
+                "Theme support with System, Light, and Dark modes with persistent preference",
+                "Multi-select selection mode for batch delete or share operations",
+                "Animated auto-hiding header and floating pill-shaped bottom navigation",
+            ],
+            "tech": "Flutter · Dart · Provider · photo_manager · video_player · Cross-platform",
         },
     ]
 
