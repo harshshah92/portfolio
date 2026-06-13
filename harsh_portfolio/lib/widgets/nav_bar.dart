@@ -4,7 +4,8 @@ import '../utils/responsive.dart';
 
 class AppNavBar extends StatelessWidget {
   final bool isScrolled;
-  const AppNavBar({super.key, this.isScrolled = false});
+  final VoidCallback? onContactTap;
+  const AppNavBar({super.key, this.isScrolled = false, this.onContactTap});
 
   @override
   Widget build(BuildContext context) {
@@ -71,6 +72,17 @@ class AppNavBar extends StatelessWidget {
                 _NavLink(
                   label: 'Projects',
                   onTap: () => Navigator.pushNamed(context, '/projects'),
+                ),
+                const SizedBox(width: 24),
+                _NavLink(
+                  label: 'Contact',
+                  onTap: () {
+                    if (onContactTap != null) {
+                      onContactTap!();
+                    } else {
+                      Navigator.pushNamed(context, '/');
+                    }
+                  },
                 ),
                 const SizedBox(width: 24),
               ],

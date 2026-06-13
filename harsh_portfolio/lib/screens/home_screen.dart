@@ -18,6 +18,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final ScrollController _scrollController = ScrollController();
+  final GlobalKey _contactKey = GlobalKey();
   bool _isScrolled = false;
 
   @override
@@ -33,6 +34,17 @@ class _HomeScreenState extends State<HomeScreen> {
   void dispose() {
     _scrollController.dispose();
     super.dispose();
+  }
+
+  void _scrollToContact() {
+    final context = _contactKey.currentContext;
+    if (context != null) {
+      Scrollable.ensureVisible(
+        context,
+        duration: const Duration(milliseconds: 600),
+        curve: Curves.easeInOut,
+      );
+    }
   }
 
   @override
@@ -52,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 _FeaturedProjectsSection(),
                 _TechnologyShowcaseSection(),
                 _DownloadSection(),
-                const ContactSection(),
+                ContactSection(key: _contactKey),
                 const AppFooter(),
               ],
             ),
@@ -61,7 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
             top: 0,
             left: 0,
             right: 0,
-            child: AppNavBar(isScrolled: _isScrolled),
+            child: AppNavBar(
+              isScrolled: _isScrolled,
+              onContactTap: _scrollToContact,
+            ),
           ),
         ],
       ),
