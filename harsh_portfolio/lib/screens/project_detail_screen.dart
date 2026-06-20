@@ -523,23 +523,9 @@ class _ProjectDetailScreenState extends State<ProjectDetailScreen> {
       isMobile: isMobile,
       title: 'Screenshots',
       icon: Icons.perm_media_rounded,
-      child: SizedBox(
+      child: _ScreenshotCarousel(
+        screenshots: project.screenshots,
         height: isMobile ? 420 : 520,
-        child: ListView.separated(
-          scrollDirection: Axis.horizontal,
-          itemCount: project.screenshots.length,
-          separatorBuilder: (_, __) => const SizedBox(width: 16),
-          itemBuilder: (context, index) {
-            return ClipRRect(
-              borderRadius: BorderRadius.circular(12),
-              child: Image.asset(
-                project.screenshots[index],
-                height: isMobile ? 420 : 520,
-                fit: BoxFit.contain,
-              ),
-            );
-          },
-        ),
       ),
     ).animate().fadeIn(duration: 400.ms, delay: 700.ms);
   }
@@ -595,6 +581,194 @@ class _DetailSection extends StatelessWidget {
             child,
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _ScreenshotCarousel extends StatefulWidget {
+  final List<String> screenshots;
+  final double height;
+
+  const _ScreenshotCarousel({
+    required this.screenshots,
+    required this.height,
+  });
+
+  @override
+  State<_ScreenshotCarousel> createState() => _ScreenshotCarouselState();
+}
+
+class _ScreenshotCarouselState extends State<_ScreenshotCarousel> {
+  final ScrollController _controller = ScrollController();
+
+  void _scrollBy(double offset) {
+    _controller.animateTo(
+      (_controller.offset + offset).clamp(0, _controller.position.maxScrollExtent),
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.easeInOut,
+    );
+  }
+
+  void _openFullScreen(int index) {
+    showDialog(
+      context: context,
+      builder: (_) => _FullScreenViewer(
+        screenshots: widget.screenshots,
+        initialIndex: index,
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        SizedBox(
+          height: widget.height,
+          child: ListView.separated(
+            controller: _controller,
+            scrollDirection: Axis.horizontal,
+            itemCount: widget.screenshots.length,
+            separatorBuilder: (_, __) => const SizedBox(width: 16),
+            itemBuilder: (context, index) {
+              return GestureDetector(
+                onTap: () => _openFullScreen(index),
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(12),
+                    child: Image.asset(
+                      widget.screenshots[index],
+                      height: widget.height,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+        Positioned(
+          left: 0,
+          child: _ArrowButton(
+            icon: Icons.chevron_left_rounded,
+            onTap: () => _scrollBy(-300),
+          ),
+        ),
+        Positioned(
+          right: 0,
+          child: _ArrowButton(
+            icon: Icons.chevron_right_rounded,
+            onTap: () => _scrollBy(300),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _ArrowButton extends StatelessWidget {
+  final IconData icon;
+  final VoidCallback onTap;
+
+  const _ArrowButton({required this.icon, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: Colors.black.withValues(alpha: 0.6),
+            shape: BoxShape.circle,
+          ),
+          child: Icon(icon, color: Colors.white, size: 28),
+        ),
+      ),
+    );
+  }
+}
+
+class _FullScreenViewer extends StatefulWidget {
+  final List<String> screenshots;
+  final int initialIndex;
+
+  const _FullScreenViewer({
+    required this.screenshots,
+    required this.initialIndex,
+  });
+
+  @override
+  State<_FullScreenViewer> createState() => _FullScreenViewerState();
+}
+
+class _FullScreenViewerState extends State<_FullScreenViewer> {
+  late int _current;
+
+  @override
+  void initState() {
+    super.initState();
+    _current = widget.initialIndex;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Dialog(
+      backgroundColor: Colors.black,
+      insetPadding: const EdgeInsets.all(16),
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          InteractiveViewer(
+            child: Image.asset(
+              widget.screenshots[_current],
+              fit: BoxFit.contain,
+            ),
+          ),
+          Positioned(
+            top: 8,
+            right: 8,
+            child: IconButton(
+              onPressed: () => Navigator.pop(context),
+              icon: const Icon(Icons.close_rounded, color: Colors.white, size: 28),
+            ),
+          ),
+          Positioned(
+            bottom: 16,
+            child: Text(
+              '${_current + 1} / ${widget.screenshots.length}',
+              style: const TextStyle(color: Colors.white70, fontSize: 14),
+            ),
+          ),
+          if (_current > 0)
+            Positioned(
+              left: 8,
+              child: _ArrowButton(
+                icon: Icons.chevron_left_rounded,
+                onTap: () => setState(() => _current--),
+              ),
+            ),
+          if (_current < widget.screenshots.length - 1)
+            Positioned(
+              right: 8,
+              child: _ArrowButton(
+                icon: Icons.chevron_right_rounded,
+                onTap: () => setState(() => _current++),
+              ),
+            ),
+        ],
       ),
     );
   }
