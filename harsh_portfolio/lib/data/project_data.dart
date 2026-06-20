@@ -624,6 +624,7 @@ class ProjectData {
         'Theme system with persistent user preferences',
         'Batch operations with multi-select mode',
       ],
+      appStoreUrl: 'https://apps.apple.com/in/app/galleryhub/id6766763174',
       isFeatured: false,
     ),
   ];

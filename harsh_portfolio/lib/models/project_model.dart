@@ -10,6 +10,7 @@ class ProjectModel {
   final List<String> technicalChallenges;
   final List<String> keyDeliverables;
   final List<String> screenshots;
+  final String? appStoreUrl;
   final bool isFeatured;
 
   const ProjectModel({
@@ -24,6 +25,7 @@ class ProjectModel {
     required this.technicalChallenges,
     required this.keyDeliverables,
     this.screenshots = const [],
+    this.appStoreUrl,
     this.isFeatured = false,
   });
 }

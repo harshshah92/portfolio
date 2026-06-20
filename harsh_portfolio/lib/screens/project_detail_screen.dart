@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../data/project_data.dart';
 import '../models/project_model.dart';
 import '../utils/responsive.dart';
@@ -253,6 +254,42 @@ class _ProjectDetailScreenState extends State<ProjectDetailScreen> {
                         ),
                       ),
                     ],
+                  ),
+                ),
+              ],
+              if (project.appStoreUrl != null) ...[
+                const SizedBox(width: 8),
+                GestureDetector(
+                  onTap: () => launchUrl(
+                    Uri.parse(project.appStoreUrl!),
+                    mode: LaunchMode.externalApplication,
+                  ),
+                  child: MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 5),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF007AFF).withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: const Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.apple_rounded,
+                              size: 14, color: Color(0xFF007AFF)),
+                          SizedBox(width: 4),
+                          Text(
+                            'App Store',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFF007AFF),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ],
