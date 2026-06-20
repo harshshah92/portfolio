@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../data/project_data.dart';
 import '../models/project_model.dart';
@@ -689,12 +690,18 @@ class _ArrowButton extends StatelessWidget {
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
         child: Container(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
-            color: Colors.black.withValues(alpha: 0.6),
+            color: Colors.black.withValues(alpha: 0.7),
             shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.3),
+                blurRadius: 8,
+              ),
+            ],
           ),
-          child: Icon(icon, color: Colors.white, size: 28),
+          child: Icon(icon, color: Colors.white, size: 30),
         ),
       ),
     );
@@ -716,59 +723,95 @@ class _FullScreenViewer extends StatefulWidget {
 
 class _FullScreenViewerState extends State<_FullScreenViewer> {
   late int _current;
+  late final FocusNode _focusNode;
 
   @override
   void initState() {
     super.initState();
     _current = widget.initialIndex;
+    _focusNode = FocusNode();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _focusNode.requestFocus());
+  }
+
+  @override
+  void dispose() {
+    _focusNode.dispose();
+    super.dispose();
+  }
+
+  void _next() {
+    if (_current < widget.screenshots.length - 1) setState(() => _current++);
+  }
+
+  void _prev() {
+    if (_current > 0) setState(() => _current--);
   }
 
   @override
   Widget build(BuildContext context) {
-    return Dialog(
-      backgroundColor: Colors.black,
-      insetPadding: const EdgeInsets.all(16),
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          InteractiveViewer(
-            child: Image.asset(
-              widget.screenshots[_current],
-              fit: BoxFit.contain,
-            ),
-          ),
-          Positioned(
-            top: 8,
-            right: 8,
-            child: IconButton(
-              onPressed: () => Navigator.pop(context),
-              icon: const Icon(Icons.close_rounded, color: Colors.white, size: 28),
-            ),
-          ),
-          Positioned(
-            bottom: 16,
-            child: Text(
-              '${_current + 1} / ${widget.screenshots.length}',
-              style: const TextStyle(color: Colors.white70, fontSize: 14),
-            ),
-          ),
-          if (_current > 0)
-            Positioned(
-              left: 8,
-              child: _ArrowButton(
-                icon: Icons.chevron_left_rounded,
-                onTap: () => setState(() => _current--),
+    return KeyboardListener(
+      focusNode: _focusNode,
+      autofocus: true,
+      onKeyEvent: (event) {
+        if (event is KeyDownEvent) {
+          if (event.logicalKey == LogicalKeyboardKey.arrowRight) _next();
+          if (event.logicalKey == LogicalKeyboardKey.arrowLeft) _prev();
+          if (event.logicalKey == LogicalKeyboardKey.escape) Navigator.pop(context);
+        }
+      },
+      child: Dialog(
+        backgroundColor: Colors.black,
+        insetPadding: const EdgeInsets.all(16),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            GestureDetector(
+              onHorizontalDragEnd: (details) {
+                if (details.primaryVelocity != null) {
+                  if (details.primaryVelocity! < 0) _next();
+                  if (details.primaryVelocity! > 0) _prev();
+                }
+              },
+              child: InteractiveViewer(
+                child: Image.asset(
+                  widget.screenshots[_current],
+                  fit: BoxFit.contain,
+                ),
               ),
             ),
-          if (_current < widget.screenshots.length - 1)
             Positioned(
+              top: 8,
               right: 8,
-              child: _ArrowButton(
-                icon: Icons.chevron_right_rounded,
-                onTap: () => setState(() => _current++),
+              child: IconButton(
+                onPressed: () => Navigator.pop(context),
+                icon: const Icon(Icons.close_rounded, color: Colors.white, size: 28),
               ),
             ),
-        ],
+            Positioned(
+              bottom: 16,
+              child: Text(
+                '${_current + 1} / ${widget.screenshots.length}',
+                style: const TextStyle(color: Colors.white70, fontSize: 14),
+              ),
+            ),
+            if (_current > 0)
+              Positioned(
+                left: 8,
+                child: _ArrowButton(
+                  icon: Icons.chevron_left_rounded,
+                  onTap: _prev,
+                ),
+              ),
+            if (_current < widget.screenshots.length - 1)
+              Positioned(
+                right: 8,
+                child: _ArrowButton(
+                  icon: Icons.chevron_right_rounded,
+                  onTap: _next,
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }
