@@ -9,6 +9,7 @@ class ProjectModel {
   final List<String> architectureHighlights;
   final List<String> technicalChallenges;
   final List<String> keyDeliverables;
+  final List<String> screenshots;
   final bool isFeatured;
 
   const ProjectModel({
@@ -22,6 +23,7 @@ class ProjectModel {
     required this.architectureHighlights,
     required this.technicalChallenges,
     required this.keyDeliverables,
+    this.screenshots = const [],
     this.isFeatured = false,
   });
 }

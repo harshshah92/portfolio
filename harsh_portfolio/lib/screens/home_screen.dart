@@ -128,7 +128,7 @@ class _HeroSection extends StatelessWidget {
           ConstrainedBox(
             constraints: BoxConstraints(maxWidth: isMobile ? double.infinity : 700),
             child: Text(
-              'Results-driven Senior Engineer with 9+ years of hands-on experience architecting and delivering enterprise-grade mobile and full-stack applications. Specialized in cross-platform mobile development using Xamarin.Forms, .NET MAUI, and Flutter, coupled with robust backend systems built on ASP.NET Core, FastAPI, SQL Server, and Supabase. Passionate about integrating AI/ML capabilities into production applications using Python, Ollama, and modern LLM frameworks. Proven track record across healthcare, hospitality, logistics, finance, and real-time communication domains.',
+              'Results-driven Senior Engineer with 9+ years of hands-on experience architecting and delivering enterprise-grade mobile and full-stack applications. Specialized in cross-platform mobile development using Xamarin.Forms, .NET MAUI, and Flutter, coupled with robust backend systems built on ASP.NET Core, FastAPI, SQL Server, and Supabase. Passionate about integrating AI/ML capabilities into production applications using Python, Ollama, and modern LLM frameworks. Proven track record across healthcare, hospitality, logistics, finance, gaming, and real-time communication domains.',
               style: theme.textTheme.bodyLarge?.copyWith(
                 color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
                 height: 1.7,

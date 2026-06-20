@@ -47,6 +47,8 @@ class _ProjectDetailScreenState extends State<ProjectDetailScreen> {
         return const Color(0xFFEC4899);
       case 'Finance':
         return const Color(0xFF06B6D4);
+      case 'Gaming':
+        return const Color(0xFFEF4444);
       default:
         return const Color(0xFF6B7280);
     }
@@ -66,6 +68,8 @@ class _ProjectDetailScreenState extends State<ProjectDetailScreen> {
         return Icons.chat_rounded;
       case 'Finance':
         return Icons.account_balance_wallet_rounded;
+      case 'Gaming':
+        return Icons.sports_esports_rounded;
       default:
         return Icons.code_rounded;
     }
@@ -470,45 +474,71 @@ class _ProjectDetailScreenState extends State<ProjectDetailScreen> {
   }
 
   Widget _buildMedia(ThemeData theme, bool isMobile) {
-    return _DetailSection(
-      isMobile: isMobile,
-      title: 'Media',
-      icon: Icons.perm_media_rounded,
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.all(40),
-        decoration: BoxDecoration(
-          color: theme.colorScheme.onSurface.withValues(alpha: 0.03),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(
-            color: theme.dividerColor.withValues(alpha: 0.1),
-            style: BorderStyle.solid,
+    final project = ProjectData.getById(widget.projectId);
+    if (project == null || project.screenshots.isEmpty) {
+      return _DetailSection(
+        isMobile: isMobile,
+        title: 'Media',
+        icon: Icons.perm_media_rounded,
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(40),
+          decoration: BoxDecoration(
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.03),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: theme.dividerColor.withValues(alpha: 0.1),
+            ),
+          ),
+          child: Column(
+            children: [
+              Icon(
+                Icons.photo_library_rounded,
+                size: 40,
+                color: theme.colorScheme.onSurface.withValues(alpha: 0.2),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                'Images, Screenshots & Demo Videos',
+                style: theme.textTheme.titleSmall?.copyWith(
+                  fontWeight: FontWeight.w600,
+                  color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                'Coming Soon',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.secondary,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ],
           ),
         ),
-        child: Column(
-          children: [
-            Icon(
-              Icons.photo_library_rounded,
-              size: 40,
-              color: theme.colorScheme.onSurface.withValues(alpha: 0.2),
-            ),
-            const SizedBox(height: 12),
-            Text(
-              'Images, Screenshots & Demo Videos',
-              style: theme.textTheme.titleSmall?.copyWith(
-                fontWeight: FontWeight.w600,
-                color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
+      ).animate().fadeIn(duration: 400.ms, delay: 700.ms);
+    }
+
+    return _DetailSection(
+      isMobile: isMobile,
+      title: 'Screenshots',
+      icon: Icons.perm_media_rounded,
+      child: SizedBox(
+        height: isMobile ? 420 : 520,
+        child: ListView.separated(
+          scrollDirection: Axis.horizontal,
+          itemCount: project.screenshots.length,
+          separatorBuilder: (_, __) => const SizedBox(width: 16),
+          itemBuilder: (context, index) {
+            return ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: Image.asset(
+                project.screenshots[index],
+                height: isMobile ? 420 : 520,
+                fit: BoxFit.contain,
               ),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              'Coming Soon',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.secondary,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ],
+            );
+          },
         ),
       ),
     ).animate().fadeIn(duration: 400.ms, delay: 700.ms);

@@ -28,6 +28,8 @@ class _ProjectCardState extends State<ProjectCard> {
         return const Color(0xFFEC4899);
       case 'Finance':
         return const Color(0xFF06B6D4);
+      case 'Gaming':
+        return const Color(0xFFEF4444);
       default:
         return const Color(0xFF6B7280);
     }
@@ -47,6 +49,8 @@ class _ProjectCardState extends State<ProjectCard> {
         return Icons.chat_rounded;
       case 'Finance':
         return Icons.account_balance_wallet_rounded;
+      case 'Gaming':
+        return Icons.sports_esports_rounded;
       default:
         return Icons.code_rounded;
     }
