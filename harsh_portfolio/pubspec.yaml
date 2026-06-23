@@ -1,7 +1,7 @@
 name: harsh_portfolio
 description: Premium Portfolio - Senior Mobile & Full Stack Engineer
 publish_to: 'none'
-version: 1.1.0+2
+version: 1.2.0+3
 
 environment:
   sdk: ^3.11.0
@@ -27,3 +27,4 @@ flutter:
     - assets/projects/bounceup/
     - assets/projects/smartlogix/
     - assets/projects/reconvision/
+    - assets/projects/digital-butler/
